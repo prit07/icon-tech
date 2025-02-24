@@ -1,0 +1,69 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+
+
+svg { height: 100%; width: 100%; }
+	#US-map-wapper path { fill: #00838b; stroke-width: 1; }
+	#US-map-wapper a path { fill: #00a6b4;}
+	#US-map-wapper a:hover path  { fill: #23767c;}
+	#US-map-wapper path:hover  { fill: #30a5ad;}
+	tspan { fill: #ffffff; font-size: 4px; cursor: pointer; }
+	#us-cs-text {    transform: rotate(20deg);}
+	#us-ca-text { transform: rotate(53deg);  transform-origin: 559.24866px 382.85864px;}
+    #us-mn-text { transform: rotate(84deg); transform-origin: 678.24866px 340.85864px;}
+	#us-wi-text { transform: rotate(53deg); transform-origin: 698.24866px 343.85864px;}
+	#us-mi-text { transform: rotate(82deg); transform-origin: 719.36866px 355.85864px;}
+    #us-mi-text>tspan { font-size: 3px;}
+	#us-il-text { transform: rotate(82deg); transform-origin: 701.36866px 374.85864px;}
+	#us-in-text { transform: rotate(82deg); transform-origin: 701.36866px 374.85864px;}
+	#us-in-text { transform: rotate(82deg); transform-origin: 713.36866px 373.85864px;}
+	#us-ny-text>tspan { font-size: 3px; }
+	#us-nh-text { transform: rotate(57deg); transform-origin: 766.36866px 322.85864px;}
+	#us-nh-text>tspan { font-size: 2.5px; fill: #00a6b4;}
+	#us-ma-text {
+		transform: rotate(64deg);
+		transform-origin: 776.36866px 348.85864px;
+	}
+	#us-ma-text>tspan { font-size: 2px; fill: #00a6b4;}
+	#us-md-text { transform: rotate(54deg); transform-origin: 766.36866px 375.85864px;}
+	#us-md-text>tspan { font-size: 3px; fill: #00a6b4;}
+	#us-va-text { transform: rotate(-24deg); transform-origin: 748.36866px 389.85864px;}
+	#us-wv-text>tspan { font-size: 2px;}
+	#us-wv-text { transform: rotate(-30deg); transform-origin: 734.36866px 383.85864px;}
+	#us-nc-text>tspan{  font-size: 3px;}
+	#us-nc-text { transform: rotate(-10deg); transform-origin: 747.36866px 424.85864px;}
+	#us-ar-text { transform: rotate(-33deg); transform-origin: 690.36866px 415.85864px;}
+	#us-ga-text { transform: rotate(70deg); transform-origin: 732.36866px 407.85864px;}
+	#us-fl-text { transform: rotate(59deg); transform-origin: 747.36866px 429.85864px;}
+	#us-hi-text>tspan {  fill: #00a6b4;}
+	#us-wa-text>tspan { font-size: 3px;}
+	#us-nd-text { transform: rotate(5deg); transform-origin: 663.24866px 260.85864px;}
+	#us-sd-text { transform: rotate(4deg);	transform-origin: 663.24866px 260.85864px;}
+	#us-wy-text { transform: rotate(4deg);	transform-origin: 663.24866px 260.85864px;}
+	#us-wy-text { transform: rotate(6deg); transform-origin: 617.24866px 320.85864px;}
+	#us-nm-text { transform: rotate(4deg); transform-origin: 617.24866px 320.85864px;}
+	#us-mo-text {transform: rotate(4deg); transform-origin: 617.24866px 320.85864px; }
+	#us-mo-text { transform: rotate(5deg); transform-origin: 687.24866px 344.85864px;}
+	#us-ok-text { transform: rotate(5deg); transform-origin: 682.24866px 344.85864px;}
+	#us-la-text { transform: rotate(5deg); transform-origin: 682.24866px 344.85864px;}
+	#us-la-text { transform: rotate(41deg); transform-origin: 688.24866px 419.85864px;}
+	#us-ms-text {transform: rotate(41deg); transform-origin: 688.24866px 419.85864px; }
+	#us-ms-text { transform: rotate(75deg); transform-origin: 703.24866px 413.85864px;}
+	#us-ky-text {transform: rotate(5deg); transform-origin: 682.24866px 344.85864px; }
+	#us-ky-text { transform: rotate(-9deg); transform-origin: 721.24866px 421.85864px}
+	#us-sc-text>tspan { font-size: 2.8px;}
+	#us-sc-text { transform: rotate(23deg); transform-origin: 746.24866px 383.85864px;}
+    #us-de-text>tspan {font-size: 2.8px; fill: #00a6b4; }
+	#us-de-text { transform: rotate(23deg); transform-origin: 766.24866px 366.85864px;}
+	#us-nj-text>tspan { font-size: 2.8px; fill: #00a6b4;}
+	#us-nj-text { transform: rotate(23deg); transform-origin: 766.24866px 366.85864px;}
+	#us-nj-text { transform: rotate(51deg); transform-origin: 770.24866px 371.85864px;}
+	#us-ct-text>tspan { font-size: 2.8px; fill: #00a6b4;}
+	#us-ct-text { transform: rotate(57deg); transform-origin: 773.24866px 368.85864px;}
+	#us-ri-text>tspan { font-size: 2.8px; fill: #00a6b4;}
+	#us-ri-text { transform: rotate(61deg); transform-origin: 777.24866px 360.85864px;}
+	#us-pa-text>tspan { font-size: 3px; }
+	#us-pa-text { transform: rotate(8deg); transform-origin: 751.24866px 314.85864px;}
+	#us-vt-text>tspan { font-size: 2.8px; fill: #00a6b4;}
+	#us-vt-text { transform: rotate(40deg); transform-origin: 753.24866px 328.85864px;}
+	#us-al-text {  transform: rotate(40deg); transform-origin: 753.24866px 328.85864px;}
+	#us-al-text { transform: rotate(68deg); transform-origin: 718.24866px 410.85864px;}
