@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+
+    <!-- Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!--  Data table -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+
+    <!-- CUSTOM CSS -->
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+
+    <!-- BOOTSTRAP JS -->
+    <script src='https://code.jquery.com/jquery-3.7.0.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Data table js -->
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src='js/main.js'></script>
+
+</head>
+
+<body>
+
+    <table id="order-add-detils" class="table nowrap " style="width:100%">
+        <thead>
+            <tr class="row1">
+        
+                    <th class="">№</th>
+                    <th class="">Name</th>
+                    <th class="">Email/Login</th>
+                    <th class="">Phone</th>
+                    <th class="">Skype</th>
+                    <th class="">Role</th>
+                    <th class="">Edit</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row2">
+                <td  class="">1</td>
+                <td class="">user123</td>
+                <td  class="">123@hotmail.com</td>
+                <td  class="">0123456</td>
+                <td  class="">user123</td>
+                <td  class="">Admin</td>
+                <td >
+                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal" contenteditable="false">Edit</button>
+                </td>
+            </tr>
+            <tr class="row1">
+                <td  class="">2</td>
+                <td class="">user456</td>
+                <td  class="">456@hotmail.com</td>
+                <td  class="">0123458</td>
+                <td  class="">user456</td>
+                <td  class="">User</td>
+                <td >
+                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Edit</button>
+                </td>
+            </tr>
+            <tr class="row1">
+                <td  class="">2</td>
+                <td class="">user456</td>
+                <td  class="">456@hotmail.com</td>
+                <td  class="">0123458</td>
+                <td  class="">a</td>
+                <td  class="">User</td>
+                <td >
+                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="">№</th>
+                <th class="">Name</th>
+                <th class="">Email/Login</th>
+                <th class="">Phone</th>
+                <th class="">Skype</th>
+                <th class="">Role</th>
+                <th class="">Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align:center;" class="">1</td>
+                <td class="">user123</td>
+                <td style="text-align:center;" class="">123@hotmail.com</td>
+                <td style="text-align:center;" class="">0123456</td>
+                <td style="text-align:center;" class="">user123</td>
+                <td style="text-align:center;" class="">Admin</td>
+                <td >
+                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal" contenteditable="false">Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td  class="">2</td>
+                <td class="">user456</td>
+                <td  class="">456@hotmail.com</td>
+                <td  class="">0123458</td>
+                <td  class="">user456</td>
+                <td  class="">User</td>
+                <td >
+                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title mr-auto" id="myModalLabel">Edit Links Details </h4>
+                    <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true" class="">×   </span><span class="sr-only">Close</span>
+                    </button>
+                </div>
+                <div class="modal-body"></div>
+                
+            </div>
+        </div>
+    </div>
+</body>

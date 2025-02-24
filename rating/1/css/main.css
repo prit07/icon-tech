@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.radial-progress {
+    width: 65px;
+    height: 65px;
+    background-color: rgba(239, 239, 239, .63);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative
+}
+
+.radial-progress .circle .fill,
+.radial-progress .circle .mask {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    border-radius: 50%
+}
+
+.radial-progress .circle .fill,
+.radial-progress .circle .mask {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform 1s linear .1s;
+    transition: -ms-transform 1s linear .1s;
+    transition: transform 1s linear .1s;
+    border-radius: 50%
+}
+
+.radial-progress .circle .mask {
+    clip: rect(0, 65px, 65px, 32.5px)
+}
+
+.radial-progress .circle .mask .fill {
+    clip: rect(0, 32.5px, 65px, 0);
+    background-color: #e43917
+}
+
+.radial-progress .circle .mask .fill {
+    clip: rect(0, 32.5px, 65px, 0);
+    background-color: #17e439 !important;
+}
+
+.radial-progress .inset {
+    color: #111;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: #fbfbfb;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .2)
+}
+
+.radial-progress .inset .percentage {
+    width: 55px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font: 700 23px/25px Roboto, Arial;
+    margin-top: -12px
+}
+
+#rehub-restrict-login-popup { display: none
+}

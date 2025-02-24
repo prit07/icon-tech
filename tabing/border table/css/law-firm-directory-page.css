@@ -1,0 +1,85 @@
+body { margin: 0; padding: 0; background: var(--main_bg_1); }
+
+a:hover { text-decoration:none; }
+/* tab css start */
+.lawyer-tab-menu ul { border-bottom: 2px solid #ECD7C5;}
+.lawyer-tab-menu ul li { list-style-type: none; display: inline-block; }
+.lawyer-tab-menu ul li a {
+	text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.24px;
+	padding: 0px 40px 20px 40px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.lawyer-tab-menu ul li a.lawyer-active-a:before { 
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid black; 
+}
+.lawyer-tab-menu ul li:first-child a.lawyer-active-a:before { bottom: -10px; }
+.lawyer-tab { display: none; }
+.lawyer-tab-active { display: block; }
+
+
+
+
+.date-picker-container .form-field {
+	position: absolute;
+    top: 46px;
+    padding: 0 !important;
+    z-index: 111111;
+    width: 100%;
+}
+
+
+.at-a-pr-guided-rafting-heading ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #242424;
+    padding: 10px 16px;
+}
+.at-a-pr-guided-rafting-heading h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #242424;
+    padding: 10px 16px 0 16px;
+    margin: 0 0 10px;
+}
+
+.date-picker-container .form-field { display: none;}
+
+.date-picker-container.none-time .form-field {
+    display: none;
+}
+
+/* jQuery('.date-picker-container .form-control.input').on('click', function () {
+	jQuery('.form-field').toggleClass('none-time');
+}); */
+
+
+.form-field.form-field-wide.time-view {
+    display: none;
+}
+.form-field.form-field-wide.time-view.none-time {
+    display: block;
+}
+
+.time-close-btn {
+    position: absolute;
+    right: 21px;
+    top: 40px;
+}
+
+

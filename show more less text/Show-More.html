@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="noindex, nofollow" />
+	<title>Show More</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		.show-more-height {
+			height: 120px;
+			overflow: hidden;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="w-700">
+			<!-- start html -->
+			<div class="detail-tab-text show-more-height">
+				<p>Con un trabajo de sencillez subestimado, la forma elegante y la apariencia delicada de la silla CH24 Wishbone de Carl Hansen ocultan una fuerza y funcionalidad confeccionada para cualquier hogar.</p>
+				<p>Diseñada en los años 50 por Hans J. Wegner quien fue para muchos el "maestro" de las sillas, la CH24 Wishbone se ha convertido en la silla más popular de la firma Carl Hansen y un icono del diseño mundial, apreciada y valorada en todo el mundo.</p>
+				<p>Con un trabajo de sencillez subestimado, la forma elegante y la apariencia delicada de la silla CH24 Wishbone de Carl Hansen ocultan una fuerza y funcionalidad confeccionada para cualquier hogar.</p>
+			</div>
+			<a href="javascript:void(0)" class="show-more">VER MÁS</a>
+			<!-- end html -->
+		</div>
+	</div>
+</div>	
+
+<script type="text/javascript">
+	$(".show-more").click(function () {
+		if($(".detail-tab-text").hasClass("show-more-height")) {
+			$(this).text("Show Less");
+		} else {
+			$(this).text("Show More");
+		}
+
+		$(".detail-tab-text").toggleClass("show-more-height");
+	});
+</script>
+
+</body>
+
+</html>

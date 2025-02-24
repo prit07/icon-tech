@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Popup</title>
+  <!-- <link rel="stylesheet" href="sty.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <style>
+    body.popup-open {
+  overflow: hidden;
+}
+.variants-popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: 0; /* Align to the right */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  animation: slideFromRight 0.5s forwards;
+ 
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideOutRight {
+  animation: slideToRight 0.5s forwards; 
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.variant-popup-content {
+  background-color: #D9D9D9;
+  margin: 10% auto;
+  padding: 20px;
+  max-width: 1000px;
+  padding: 20px 29px ;
+  border: 5px solid #4141412B;
+ 
+}
+  .m-1200 { width: 250px;}
+.variants-popup-top-img img {width: 100%; height: 146px; }
+
+.variants-popup_accordion_wapper { margin: 30px 0;}
+.variants-popup_accordion_wapper a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: left;
+    color: #fff;
+}
+.variants-popup_accordion_wapper .variants-popup_content { display: none; padding: 4px 8px; background: #D9D9D9;}
+.variants-popup_accordion_item {
+  max-width: 234px;
+  background: #414141;
+  border-bottom: 1px solid #DFE0DF;
+  margin-bottom: 8px;
+}
+.variants-popup_accordion_item .variants-popup_menu { padding: 12px 0px 14px 0; position: relative;  margin: 0 8px;}
+.variants-popup_content ul { margin: 0; padding: 0; list-style: none; }
+.variants-popup_content ul li {
+  font-family: Arimo;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.4px;
+  text-align: left;
+  margin-bottom: 4px;
+}
+.variants-popup_content ul li input:focus-visible { outline: unset;}
+
+
+.variants-popup-bottom-items {
+  background-color: #EBEBEB;
+  padding: 24px 20px 3px 18px;
+  display: flex;
+}
+.variants-popup-bottom-img {margin-right: 30px;}
+.variants-popup-bottom-img img { 
+  width: 79px;
+  height: 66px;
+}
+.variants-popup-bottom-text a {
+  font-family: Arimo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.1px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 14px;
+  display: block;
+  text-decoration: none;
+}
+.variants-popup-bottom-text ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 5px; margin-right: 5px;}
+.variants-popup-bottom-text ul li {
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.8px;
+  text-align: left;
+  color: #000;
+}
+
+
+
+.variants-popup-right-color { margin-right: 50px;}
+.variants-popup-right-color form { margin: 0; padding: 0;}
+.variants-popup-right-color form input[type="radio"] { display: none; }
+.variants-popup-right-color form label {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    position: relative; 
+    margin-right: 4px;
+}
+.variants-popup-right-color form label img { width: 100%; max-width: 81px; height: 40px; margin-bottom: -5px;}
+.variants-popup-right-color form label h5 {
+  font-family: Arimo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.1px;
+  text-align: left;
+  margin: 0 0 8px 0;
+}
+.variants-popup-right-color form label span {
+    display: block;
+    font-family: Arimo;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.8px;
+    color: #000000;
+    padding: 5px 0; 
+}
+
+.variants-popup-price {
+  background-color: #414141;
+  padding: 15px 8px;
+  margin-right: 6px;
+}
+.variants-popup-price h4 {
+  font-family: Arimo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+.variants-popup-price a {
+  display: block;
+  font-family: Arimo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  
+}
+ 
+.variants-popup-add-to ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px;} 
+.variants-popup-add-to ul li {
+  padding: 10px;
+  background-color: #41414178;
+  display: flex;
+  gap: 20px;
+}
+.variants-popup-add-to ul li img { width: 20px; height: 20px;}
+.variants-popup-add-to ul li span {
+  font-family: Arimo;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.4px;
+  text-align: left;
+  color: #FFFFFFE5;
+}
+
+
+@media(max-width:1199px) {
+  .variant-popup-content { margin: 5%;}
+  .variants-popup-bottom-items { flex-wrap: wrap; row-gap: 20px;}
+  .variants-popup-right-color {
+    margin-right: 0px;
+}
+}
+  </style>
+</head>
+
+
+<body>
+ <div class="container ">
+  <button id="openPopup">Choose your Variation</button>
+
+  <div id="variants-popup" class="variants-popup">
+    <div class="variant-popup-content">
+      <div class="variants-popup-top-img">
+        <img src="img/variantspopup-01.png" alt="">
+      </div>
+      <div class="variants-popup_accordion_wapper">
+        <div class="variants-popup_accordion_item ">
+          <div class="variants-popup_menu">
+            <a>Dimensions</a>
+          </div>
+          <div class="variants-popup_content">
+            <ul>
+              <li>Option 1</li>
+              <li>Option 1</li>
+              <li>Option 1</li>
+              <li>Option 1</li>
+            </ul>
+          </div>
+        </div>
+        <div class="variants-popup_accordion_item ">
+          <div class="variants-popup_menu">
+            <a>Wood & Finish </a>
+          </div>
+          <div class="variants-popup_content">
+            <ul>
+              <li>Option 1</li>
+              <li>Option 1</li>
+              <li>Option 1</li>
+              <li>Option 1</li>
+            </ul>
+          </div>
+        </div>
+        <div class="variants-popup_accordion_item ">
+          <div class="variants-popup_menu">
+            <a>Upholstery</a>
+          </div>
+          <div class="variants-popup_content">
+            <ul>
+              <li>Option 1</li>
+              <li>Option 1</li>
+              <li>Option 1</li>
+              <li>Option 1</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="variants-popup-bottom-items">
+        <div class="variants-popup-bottom-img">
+          <img src="img/variantspopup-02.png" alt="">
+        </div>
+        <div class="variants-popup-bottom-text">
+          <a href="#">Dimensions</a>
+          <ul>
+            <li>W: 150 cm | </li>
+            <li>L: 100 cm | </li>
+            <li>H: 75 cm | </li>
+          </ul>
+        </div>
+        <div class="variants-popup-right-color">
+          <form>
+            <input type="radio" id="variants-color1" name="color" value="variants-color1">
+            <label for="variants-color1">
+              <h5 href="#">Wood And Finish</h5>
+              <img src="img/variantspopup-03.png" alt="">
+              <span>Color option 1</span>
+            </label>
+            <input type="radio" id="color2" name="color" value="variants-color2">
+            <label for="color2">
+              <h5 href="#">Upholstery</h5>
+              <img src="img/variantspopup-03.png" alt="">
+              <span>Color option 1</span>
+            </label>
+          </form>
+        </div>
+        <div class="variants-popup-price">
+           <h4>Variant Price</h4>
+           <a href="#">5678.00 USD</a>
+        </div>
+        <div class="variants-popup-add-to">
+          <ul>
+             <li><img src="img/variantspopup-04.png" alt=""> <span>Add To Cart</span> </li>
+             <li><img src="img/variantspopup-04.png" alt=""> <span>Add to WishList</span> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="m-1200">
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis perspiciatis quos atque corrupti odit unde labore et laudantium, suscipit magnam, aspernatur libero nobis quis architecto accusantium fugiat doloribus ratione eligendi.</p>
+  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus in nisi suscipit, dolore impedit accusantium, est ab excepturi consectetur veniam a tempora cumque quibusdam iste similique velit optio recusandae odio!</h1>
+</div>
+</div>
+<script>
+  $(document).ready(function () {
+  $("#openPopup").click(function (event) {
+    event.preventDefault(); // Prevent default behavior of the button
+    $("body").addClass("popup-open"); // Add class to prevent scrolling
+    $("#variants-popup").css("display", "block").removeClass("slideOutRight").addClass("slideFromRight");
+  });
+
+  $(window).click(function (event) {
+    if (event.target === $("#variants-popup")[0]) {
+      $("body").removeClass("popup-open"); // Remove class to allow scrolling
+      $("#variants-popup").removeClass("slideFromRight").addClass("slideOutRight");
+      // Delay hiding the popup to allow animation
+      setTimeout(function() {
+        $("#variants-popup").css("display", "none");
+      }, 500); // Duration of the animation in milliseconds
+    }
+  });
+
+  // jQuery(".variants-popup_accordion_item:first-child").addClass("active").children(".variants-popup_content").slideDown();
+  jQuery(".variants-popup_accordion_item .variants-popup_menu").on("click", function () {
+    if (jQuery(this).parent().hasClass("active")) {
+      jQuery(this).next().slideUp();
+      jQuery(this).parent().removeClass("active");
+    } else {
+      jQuery(".variants-popup_content").slideUp();
+      jQuery(".variants-popup_accordion_item").removeClass("active");
+      jQuery(this).parent().addClass("active");
+      jQuery(this).next().slideDown();
+    }
+  });
+});
+  
+</script>
+
+  <!-- <script>
+    $(document).ready(function () {
+  $("#openPopup").click(function (event) {
+    event.preventDefault(); // Prevent default behavior of the button
+    $("body").addClass("popup-open"); // Add class to prevent scrolling
+    $("#variants-popup").css("display", "block");
+  });
+
+  $(window).click(function (event) {
+    if (event.target === $("#variants-popup")[0]) {
+      $("body").removeClass("popup-open"); // Remove class to allow scrolling
+      $("#variants-popup").css("display", "none");
+    }
+  });
+
+  // jQuery(".variants-popup_accordion_item:first-child").addClass("active").children(".variants-popup_content").slideDown();
+  jQuery(".variants-popup_accordion_item .variants-popup_menu").on("click", function () {
+    if (jQuery(this).parent().hasClass("active")) {
+      jQuery(this).next().slideUp();
+      jQuery(this).parent().removeClass("active");
+    } else {
+      jQuery(".variants-popup_content").slideUp();
+      jQuery(".variants-popup_accordion_item").removeClass("active");
+      jQuery(this).parent().addClass("active");
+      jQuery(this).next().slideDown();
+    }
+  });
+});
+
+  </script> -->
+  <!-- <script src="jsss.js"></script> -->
+</body>
+
+</html>

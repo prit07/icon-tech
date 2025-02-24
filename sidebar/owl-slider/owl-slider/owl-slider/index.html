@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #1f1f1f;
+            background: -webkit-radial-gradient(#1f1f1f, #000000);
+            background: radial-gradient(#1f1f1f, #000000);
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            background: #000;
+            margin-bottom: 20px;
+            padding: 15px 0px;
+        }
+
+        .content-carousel {
+            width: 600px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .owl-carousel {
+            /* width: calc(100px - 100%); */
+        }
+
+        .owl-carousel div {
+            width: 100%;
+        }
+
+        .owl-carousel .owl-controls .owl-dot {
+            background-size: cover;
+            margin-top: 10px;
+        }
+
+        .owl-carousel .owl-dots {
+            position: absolute;
+            top: 0;
+            left: -75px;
+            width: 70px;
+            overflow-y: auto;
+            height: 50%;
+        }
+
+        .owl-carousel .owl-dot {
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 80px !important;
+        }
+
+        .owl-dots::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1></h1>
+    <div class="content-carousel">
+        <div class="owl-carousel">
+            <div> <img src="img/images.png"> </div>
+            <!-- <div> <img src="img/01.png"> </div>
+            <div> <img src="img/02.png"> </div>
+            <div> <img src="img/images.png"> </div>
+            <div> <img src="img/01.png"> </div>
+            <div> <img src="img/02.png"> </div> -->
+        </div>
+    </div>
+
+    <script>
+
+
+
+        // $(document).ready(function () {
+
+        //     $(".owl-carousel").owlCarousel({
+        //         loop: true,
+        //         items: 1,
+        //         margin: 0,
+        //         stagePadding: 0,
+        //         autoplay: false
+        //     });
+
+        //     dotcount = 1;
+
+        //     jQuery('.owl-dot').each(function () {
+        //         jQuery(this).addClass('dotnumber' + dotcount);
+        //         jQuery(this).attr('data-info', dotcount);
+        //         dotcount = dotcount + 1;
+        //     });
+
+        //     slidecount = 1;
+
+        //     jQuery('.owl-item').not('.cloned').each(function () {
+        //         jQuery(this).addClass('slidenumber' + slidecount);
+        //         slidecount = slidecount + 1;
+        //     });
+
+        //     jQuery('.owl-dot').each(function () {
+        //         grab = jQuery(this).data('info');
+        //         slidegrab = jQuery('.slidenumber' + grab + ' img').attr('src');
+        //         jQuery(this).css("background-image", "url(" + slidegrab + ")");
+        //     });
+
+        //     amount = $('.owl-dot').length;
+        //     gotowidth = 100 / amount;
+        //     jQuery('.owl-dot').css("height", gotowidth + "%");
+        // });
+
+        $(document).ready(function () {
+            // Initialize Owl Carousel
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                items: 1,
+                margin: 0,
+                stagePadding: 0,
+                autoplay: false
+            });
+
+            // Add hover event for dots
+            $('.owl-dot').hover(
+                function () {
+                    $(this).addClass('active'); // Add 'active' class on hover
+                    var dotIndex = $(this).index();
+                    $(".owl-carousel").trigger('to.owl.carousel', [dotIndex, 300]); // Go to the corresponding slide
+                },
+                function () {
+                    $(this).removeClass('active'); // Remove 'active' class when not hovering
+                }
+            );
+
+            // Additional code to set dot images and styles
+            dotcount = 1;
+            $('.owl-dot').each(function () {
+                $(this).addClass('dotnumber' + dotcount);
+                $(this).attr('data-info', dotcount);
+                dotcount = dotcount + 1;
+            });
+
+            slidecount = 1;
+            $('.owl-item').not('.cloned').each(function () {
+                $(this).addClass('slidenumber' + slidecount);
+                slidecount = slidecount + 1;
+            });
+
+            $('.owl-dot').each(function () {
+                grab = $(this).data('info');
+                slidegrab = $('.slidenumber' + grab + ' img').attr('src');
+                $(this).css("background-image", "url(" + slidegrab + ")");
+            });
+
+            amount = $('.owl-dot').length;
+            gotowidth = 100 / amount;
+            $('.owl-dot').css("height", gotowidth + "%");
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

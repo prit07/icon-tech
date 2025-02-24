@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src='main.js'></script>
+  <!-- <script src="jquery.min.js"></script> -->
+</head>
+
+<body>
+  <div class="container mt-5">
+
+
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on top"
+      data-trigger="focus">
+      Tooltip on top
+    </button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+      title="Tooltip on right" data-trigger="focus">
+      Tooltip on right
+    </button>
+
+    <button id="pover-card" class="btn btn-lg btn-info" data-toggle="popover" data-trigger="focus"
+      data-placement="bottom">No me</button>
+
+    <div class="popover-content">
+      <div id="popover-card" class="">
+        <div class="card text-center" style="margin: -10px -15px; border:0;">
+          <div class="card-header bg-warning text-white h3">
+            Popover Card
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Special title treatment</h4>
+            <p class="card-text">Using data-trigger="focus" causes the popover to close when you click away. Options are
+              hover|focus|click</p>
+            <a href="#" class="btn btn-secondary">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted bg-warning text-right">
+            <small class="text-white">
+              2 days ago
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>State City Page || legal</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/state-city-page.css">
+	<link rel="stylesheet" type="text/css" href="css/map-css.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+	integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+	integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+	crossorigin="anonymous"></script>
+	<script src="js/header-footer.js"></script>
+	<script src="js/state-city-page.js"></script>
+	<script src="js/map-js.js"></script>
+
+</head>
+
+<body>
+	<div class="m-overlay-bg"></div>
+	<!-- header start -->
+	<header id="h-home" class="h-home-wapper">
+		<div class="h-header-main">
+			<div class="container w-1280">
+				<div class="h-header-nav">
+					<div class="h-header-logo">
+						<a href="index.html"><img src="img/header-footer-img/Logo.svg" class="img-fluid" alt="logo"></a>
+					</div>
+					<div class="h-header-menu">
+						<div class="h-toggle-btn" id="h-toggle-btn">
+							<div class="line-card one"></div>
+							<div class="line-card two"></div>
+							<div class="line-card three"></div>
+						</div>
+						<div class="h-main-menu" id="h-sidebar-wrapper">
+							<ul>
+								<li><a href="find-a-lawyers.html">Find a Lawyer</a></li>
+								<li><a href="#">Legal Guides</a></li>
+								<li><a href="#">Laws & Regs</a></li>
+								<li><a href="glossary-of-legal-terms.html">Glossary</a></li>
+								<li><a href="about-us-page.html">About US</a></li>
+								<li><a href="contact-page.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Search-Button-Sign-Up-wapper">
+						<div class="search-box">
+							<input class="search-input" type="text" name="" placeholder="Search">
+							<a href="#" class="search-btn">
+								<img src="img/header-footer-img/h-search-icon.svg" class="search-w" alt="">
+								<img src="img/search-black-icon.svg" class="search-b" alt="">
+							</a>
+						</div>
+						<a href="javascript:void(0)" class="login-btn modal-form-a" data-target="#login-form-modal"><img src="img/user-login-icon.svg" alt="">Login</a>
+						<a href="register-page.html" class="sign-up-btn modal-form-a">Sign-Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- search html start  -->
+		<div class="search-popup">
+			<span class="search-back-drop"></span>
+			<button class="close-search"><span class="fas fa-times"></span></button>
+			<div class="search-inner">
+				<form method="post" action="search-results-page.html">
+					<div class="form-group">
+						<input type="search" name="search-field" value="" placeholder="Search...">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- search html end  -->
+	</header>
+
+	<!-- header end -->	
+
+	<!-- banner section start -->
+	<section class="banner-section-wapper">
+		<div class="container w-1280">
+			<div class="banner-main-wapper">
+				<div class="banner-title">
+					<h1><span>Colorado Lawyers</span></h1>
+					<p>Leverage the high traffic volume and visibility of the Justia Lawyer Directory to expand your online presence and increase your leads, while enjoying the benefits of Justia Connect</p>
+				</div>
+				<div class="form-wapper">
+					<form action="pratice-area-page.html">
+						<div class="form-col">
+							<div class="banner-new-input">
+								<span class="area-icon"><img src="img/Area-icon.svg" alt=""></span>
+								<input type="text" class="input-focus" placeholder="Practice Area or Lawyer Name">
+								<label class="label-focus">Practice Area or Lawyer Name</label>
+								<span class="arrow-f-icon"><img src="img/arrow-f-icon.svg" alt=""></span>
+							</div>
+						</div>
+						<div class="form-col">
+							<div class="form-group floating-group floating-diff">
+								<span class="area-icon"><img src="img/location-icon.svg" alt=""></span>
+								<label class="floating-label">Select Country</label>
+								<select id="country" class="form-control floating-control">
+									<option value="">Select Country</option>   
+									<option value="Afganistan">Afghanistan</option>
+									<option value="Albania">Albania</option>
+									<option value="India">India</option>
+									<option value="American Samoa">American Samoa</option>
+									<option value="Andorra">Andorra</option>
+									<option value="Angola">Angola</option>
+								</select>
+								<span class="arrow-f-icon"><img src="img/arrow-f-icon.svg" alt=""></span>
+							</div>
+						</div>
+						<div class="form-btn">
+							<button><img src="img/header-footer-img/h-search-icon.svg">Search</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- banner section end -->
+
+	<!-- cities list html start -->
+	<section class="sp-cities-wapper">
+		<div class="container w-1280">
+			<div class="sp-cities-list-wapper">
+				<ul>
+					<li><a href="practice-area-state-page.html">Alabama</a></li>
+					<li><a href="practice-area-state-page.html">Alaska</a></li>
+					<li><a href="practice-area-state-page.html">Arizona</a></li>
+					<li><a href="practice-area-state-page.html">Arkansas</a></li>
+					<li><a href="practice-area-state-page.html">California</a></li>
+					<li><a href="practice-area-state-page.html">Colorado</a></li>
+				</ul>
+				<ul>
+					<li><a href="practice-area-state-page.html">Connecticut</a></li>
+					<li><a href="practice-area-state-page.html">Delaware</a></li>
+					<li><a href="practice-area-state-page.html">District of Columbia</a></li>
+					<li><a href="practice-area-state-page.html">Florida</a></li>
+					<li><a href="practice-area-state-page.html">Georgia</a></li>
+					<li><a href="practice-area-state-page.html">Hawaii</a></li>
+				</ul>
+				<ul>
+					<li><a href="practice-area-state-page.html">Idaho</a></li>
+					<li><a href="practice-area-state-page.html">Illinois</a></li>
+					<li><a href="practice-area-state-page.html">Indiana</a></li>
+					<li><a href="practice-area-state-page.html">Iowa</a></li>
+					<li><a href="practice-area-state-page.html">Kansas</a></li>
+					<li><a href="practice-area-state-page.html">Kentucky</a></li>
+				</ul>
+				<ul>
+					<li><a href="practice-area-state-page.html">Louisiana</a></li>
+					<li><a href="practice-area-state-page.html">Maine</a></li>
+					<li><a href="practice-area-state-page.html">Maryland</a></li>
+					<li><a href="practice-area-state-page.html">Massachusetts</a></li>
+					<li><a href="practice-area-state-page.html">Michigan</a></li>
+					<li><a href="practice-area-state-page.html">Minnesota</a></li>
+				</ul>
+				<ul>
+					<li><a href="practice-area-state-page.html">Mississippi</a></li>
+					<li><a href="practice-area-state-page.html">Missouri</a></li>
+					<li><a href="practice-area-state-page.html">Montana</a></li>
+					<li><a href="practice-area-state-page.html">Nebraska</a></li>
+					<li><a href="practice-area-state-page.html">Nevada</a></li>
+					<li><a href="practice-area-state-page.html">New Hampshire</a></li>
+				</ul>
+				<ul>
+					<li><a href="practice-area-state-page.html">New Jersey</a></li>
+					<li><a href="practice-area-state-page.html">New Mexico</a></li>
+					<li><a href="practice-area-state-page.html">New York</a></li>
+					<li><a href="practice-area-state-page.html">North Carolina</a></li>
+					<li><a href="practice-area-state-page.html">North Dakota</a></li>
+					<li><a href="practice-area-state-page.html">Ohio</a></li>
+					<li><a href="practice-area-state-page.html">Oklahoma</a></li>
+				</ul>
+				<ul>
+					<li><a href="practice-area-state-page.html">Oregon</a></li>
+					<li><a href="practice-area-state-page.html">Pennsylvania</a></li>
+					<li><a href="practice-area-state-page.html">Rhode Island</a></li>
+					<li><a href="practice-area-state-page.html">South Carolina</a></li>
+					<li><a href="practice-area-state-page.html">South Dakota</a></li>
+					<li><a href="practice-area-state-page.html">Tennessee</a></li>
+					<li><a href="practice-area-state-page.html">Texas</a></li>
+				</ul>
+				<ul>
+					<li><a href="practice-area-state-page.html">Utah</a></li>
+					<li><a href="practice-area-state-page.html">Vermont</a></li>
+					<li><a href="practice-area-state-page.html">Virginia</a></li>
+					<li><a href="practice-area-state-page.html">Washington</a></li>
+					<li><a href="practice-area-state-page.html">West Virginia</a></li>
+					<li><a href="practice-area-state-page.html">Wisconsin</a></li>
+					<li><a href="practice-area-state-page.html">Wyoming</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- cities list html end -->
+
+
+	<!-- Patience areas section html start -->
+	<section class="patience-areas-wapper">
+		<div class="container w-1280">
+			<div class="patience-areas-title">
+				<h2>Patience areas</h2>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+					<div class="patience-areas-m-card">
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Bankruptcy and debt</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Business</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Civil rights</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Consumer protection</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+					<div class="patience-areas-m-card">
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Criminal defense</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Employment and labor</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Estate planning</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Family</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+					<div class="patience-areas-m-card">
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Government</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Immigration</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Intellectual property</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Lawsuits and disputes</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+					<div class="patience-areas-m-card">
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Personal injury</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="patience-areas-card">
+							<div class="patience-areas-main">
+								<h4><a href="#">Real estate</a></h4>
+								<span><img src="img/pa-down-arrow.svg" alt=""></span>
+							</div>
+							<div class="patience-areas-list">
+								<ul>
+									<li><a href="#">Chapter 11 bankruptcy</a></li>
+									<li><a href="#">Chapter 13 bankruptcy</a></li>
+									<li><a href="#">Chapter 7 bankruptcy</a></li>
+									<li><a href="#">Credit repair</a></li>
+									<li><a href="#">Debt collection</a></li>
+									<li><a href="#">Debt settlement</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Patience areas section html end -->
+
+	<!--  state page section html start -->
+	<section class="personal-lawyer-wapper">
+		<div class="pl-top-shape">
+			<div class="container w-1280">
+				<div class="learn-about-wapper">
+					<div class="state-page-wapper">
+						<div class="state-of-oregon-left-wapper">
+							<div class="state-of-oregon-top">
+								<h2>State v. Manley</h2>
+								<h5>STATE of Oregon, Respondent on Review, v. Walter Lee MANLEY, Jr., Petitioner on Review.</h5>
+								<p>CC CM95-20903; CA A92516; SC S44187.</p>
+							</div>
+							<h6>Supreme Court of Oregon.</h6>
+							<p>Argued and Submitted November 5, 1997.</p>
+							<p>Decided December 26, 1997.</p>
+							<p>*687 Dan Maloney, Deputy Public Defender, Salem, argued the cause for petitioner on review. With him on the petition was Sally L. Avera, Public Defender.</p>
+							<p>Mary H. Williams, Assistant Attorney General, Salem, argued the cause for respondent on review. With her on the brief were Hardy Myers, Attorney General, and Virginia L. Linder, Solicitor General.</p>
+							<p>Before CARSON, C.J., and GILLETTE, VAN HOOMISSEN, FADELEY, GRABER and DURHAM, JJ.[*]</p>
+							<p>GRABER, Justice.</p>
+							<p>The question in this criminal case is whether defendant's failure to return to a county correctional facility as ordered, upon completion of an alcohol treatment program located elsewhere, constitutes the felony offense of escape in the second degree or the misdemeanor offense of unlawful departure. After a bench trial on stipulated facts, the trial court convicted defendant of escape in the second degree. On defendant's appeal, the Court of Appeals affirmed from the bench without opinion. State v. Manley, 147 Or.App. 244, 936 P.2d 405 (1997). We allowed defendant's petition for review and now reverse and remand with instructions to enter a conviction for unlawful departure.</p>
+							<p>As relevant here, ORS 162.135(8) defines "unauthorized departure" to mean "the failure to return to custody after any form of temporary release * * * from a correctional facility." </p>
+							<p>Defendant was housed in the Benton County Correctional Facility (BCCF). BCCF is a "correctional facility" within the meaning of ORS 162.135(2).[2] Defendant and the state stipulated to the facts giving rise to the present charge, as follows:</p>
+							<p>"(1) On February 15, 1995, defendant admitted violating the terms of probation for the offense of DUII (Count II of CM 94-20588); probation was revoked and defendant was sentenced to six months incarceration with authority to parole defendant to a treatment program. "(2) On April 7, 1995, defendant was admitted to the Alcohol Recovery Center (ARC), a residential treatment facility in Ontario, Oregon. Prior to leaving [Corvallis to travel to Ontario], defendant was advised by his probation officer, Diana Simpson, that he was to report back to the Benton County Corrections Facility (BCCF) immediately upon his release from ARC; Simpson warned defendant that a failure to report back could constitute the crime of Escape II. Defendant acknowledged these instructions. "(3) The cost of ARC is paid by probation and parole; the charge includes transportation costs. "(4) Glenna Hlavinka, BCCF deputy, also advised defendant of his duty to report directly back to BCCF upon his discharge from treatment.</p>
+							<p>"(5) On May 3, 1995, Jack Bright, an ARC treatment counselor, advised Diana Simpson that defendant was being discharged from the center. Upon attending *688 ninety [Alcoholics Anonymous] meetings in ninety days, and submitting proof of such to ARC, defendant would receive his certificate of completion. Simpson requested Bright to instruct defendant to report directly back to the jail upon his return to Corvallis; Bright advised Simpson that he had already discussed this with defendant.</p>
+							<p>"(6) On May 4, 1995, defendant boarded a Greyhound bus which was due to return to Corvallis on that same evening at approximately 8:10 p.m. "(7) Defendant did not report to the BCCF on May 4, 1995. "(8) On June 2, 1995, defendant was driving a vehicle which was stopped by [Oregon State Police] Trp. Gregory. Defendant gave a false name to Trp. Gregory and did not acknowledge his true identity until his wallet and identification card were located by the officer. "(9) Defendant claims that he got off the Greyhound bus in Albany at 10:00 p.m. to get something to eat, leaving his personal belongings on the bus. When he realized that the bus left without him he did not know what to do. He chose not to turn himself in. "(10) Prior to his release to ARC, [defendant's lawyer] advised defendant that if he successfully completed the treatment program the Court would probably remit the remainder of his sentence. "(11) On June 12, 1995, defendant was order[ed] to complete the sentence of incarceration previously ordered in CM94-20588; on June 14, 1995, the Court ordered that defendant be paroled on June 16, 1995, from the remainder of this sentence."</p>
+							<p>Defendant concedes that, under those facts, he committed the offense of unauthorized departure, because he "fail[ed] to return to custody after a[ ] form of temporary release * * * from a correctional facility." ORS 162.135(8); ORS 162.175(1)(a). He contends, however, that he was not guilty of escape in the second degree, because he did not "escape[ ] from a correctional facility." ORS 162.155(1)(c)</p>
+							<p>The state responds that, while in the ARC program and while traveling to and from that program, defendant remained in the constructive detention of BCCF itself. The state points out:</p>
+							<p>At the first level of analysis, we conclude that a person who is confined in a local correctional facility and who is authorized to leave the facility itself temporarily, to attend an off-premises alcohol treatment program, is on a "form of temporary release" within the meaning of ORS 162.135(8). Accordingly, a person who fails to return, as ordered, to the local correctional facility at the conclusion of such a treatment program commits the crime of unauthorized departure within the meaning of ORS 162.175(1)(a), but not the crime of escape. Defendant has argued from the beginning of this case, both to the trial court and to the Court of Appeals, that he should be convicted only of that less serious offense. We agree. The contrary conclusion of the Court of Appeals was erroneous.</p>
+							<p>The decision of the Court of Appeals is reversed. The judgment of the circuit court is vacated, and the case is remanded to the circuit court with instructions to enter a conviction for the crime of unauthorized departure, ORS 162.175(1)(a).</p>
+						</div>
+						<div class="state-page-notes">
+							<h4>NOTES</h4>
+							<ul>
+								<li>
+									[*] Kulongoski, J., did not participate in the consideration or decision of this
+									case.
+								</li>
+								<li>
+									[1] ORS 162.135 was amended during the 1997 legislative session in ways not relevant
+									to this case. Or.Laws 1997, ch 249, § 47.
+								</li>
+								<li>
+									[2] " `Correctional facility' means any place used for the confinement of persons
+									charged with or convicted of a crime or otherwise confined under a court order." ORS
+									162.135(2).
+								</li>
+								<li>
+									[3] In 1997, the legislature amended ORS 144.420 by deleting paragraph (1)(a) and
+									renumbering paragraph (1)(d) as (1)(c). Or.Laws 1997, ch 851, § 1. The amendments to
+									ORS 144.420 are not relevant to this case.
+								</li>
+								<li>
+									[4] See ORS 421.005, defining "Department of Corrections institutions," and ORS
+									144.410(3), incorporating that definition by reference.
+								</li>
+								<li>
+									[5] That statute applies only to inmates under DOC's control, not to persons (such as
+									defendant) who are confined in local correctional facilities. See ORS 144.410 to
+									144.525 (statutes refer to DOC).
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="review-faq-wapper">
+						<h2>FAQ</h2>
+						<div class="faq-accordion-wapper">
+							<div class="faq-accordion-item">
+								<div class="d-flex align-items-baseline faq-menu">
+									<a href="javascript:void(0)">Not Sure What Questions To Ask A Lawyer?</a>
+								</div>
+								<div class="faq-content" style="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel sapien dui. Nam eu metus porttitor, ultricies sem molestie, pellentesque mauris.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+							<div class="faq-accordion-item">
+								<div class="d-flex align-items-baseline faq-menu">
+									<a href="javascript:void(0)">What is Lorem Ipsum?</a>
+								</div>
+								<div class="faq-content" style="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel sapien dui. Nam eu metus porttitor, ultricies sem molestie, pellentesque mauris.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+							<div class="faq-accordion-item">
+								<div class="d-flex align-items-baseline faq-menu">
+									<a href="javascript:void(0)">What Happens if You Don't Probate a Will?</a>
+								</div>
+								<div class="faq-content" style="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel sapien dui. Nam eu metus porttitor, ultricies sem molestie, pellentesque mauris.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+							<div class="faq-accordion-item">
+								<div class="d-flex align-items-baseline faq-menu">
+									<a href="javascript:void(0)">Not Sure What Questions To Ask A Lawyer?</a>
+								</div>
+								<div class="faq-content" style="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel sapien dui. Nam eu metus porttitor, ultricies sem molestie, pellentesque mauris.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+							<div class="faq-accordion-item">
+								<div class="d-flex align-items-baseline faq-menu">
+									<a href="javascript:void(0)">What Happens if You Don't Probate a Will?</a>
+								</div>
+								<div class="faq-content" style="">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel sapien dui. Nam eu metus porttitor, ultricies sem molestie, pellentesque mauris.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sed eros eu posuere. Proin convallis ac lacus eu laoreet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<!--  state page html end -->
+
+
+	<!-- footer section start -->
+	<div class="fooetr-section">
+		<div class="footer-top">
+			<div class="container w-1280">
+				<div class="footer-top-all-wapper">
+					<div class="footer-logo-wapper">
+						<div class="footer-logo">
+							<img src="img/header-footer-img/Logo.svg" alt="">
+						</div>
+						<div class="footer-sign-up-btn">
+							<a href="register-page.html" class="modal-form-a">Sign-Up</a>
+						</div>
+						<div class="social-icon">
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Directory-Resources-wapper">
+						<div class="Directory-wapper">
+							<h5>Directory</h5>
+							<ul>
+								<li><a href="pratice-area-page.html">By Practice Area</a></li>
+								<li><a href="state-page.html">By State</a></li>
+							</ul>
+						</div>
+						<div class="Resources-wapper">
+							<h5>Popular Locations</h5>
+							<ul>
+								<li><a href="#">Pennsylvania</a></li>
+								<li><a href="#">Massachusetts</a></li>
+								<li><a href="#">Virginia</a></li>
+								<li><a href="#">Florida</a></li>
+								<li><a href="#">California</a></li>
+								<li><a href="#">Colorado</a></li>
+							</ul>
+						</div>
+						<div class="Resources-wapper">
+							<h5>Popular Practice Areas</h5>
+							<ul>
+								<li><a href="#">Criminal defense</a></li>
+								<li><a href="#">Employment and labor</a></li>
+								<li><a href="#">Estate planning</a></li>
+								<li><a href="#">Family</a></li>
+								<li><a href="#">Personal injury</a></li>
+								<li><a href="#">Real estate</a></li>
+							</ul>
+						</div>
+						<div class="Legal-wapper">
+							<h5>Legal</h5>
+							<ul>
+								<li><a href="about-us-page.html">About Us</a></li>
+								<li><a href="contact-page.html">Contact Us</a></li>
+								<li><a href="#">Privacy Statement</a></li>
+								<li><a href="#">Terms of Use</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-sign-up-btn">
+						<a href="register-page.html" class="modal-form-a">Sign-Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container w-1280">
+				<div class="social-icon">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<p>© 1995-2023 Legal.com</p>
+			</div>
+		</div>
+	</div>
+	<!-- footer section end -->
+
+	<!-- login form modal popup html start -->
+	<div class="modal fade login-form-modal-wapper modal-show-wapper" id="login-form-modal" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="login-form-modal">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<img src="img/close-icon.svg" alt="">
+						</button>
+						<h2>Login to your account</h2>
+					</div>
+					<form method="" action="lawyers-profile-management-pages.html" class="login-form-main">
+						<div class="form-group">
+							<input type="text" name="" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="text" name="" placeholder="Password">
+							<span class="login-addon2"><img src="img/password-view-eye.svg" alt=""></span>
+						</div>
+						<div class="login-btn-w">
+							<button>Submit</button>
+						</div>
+					</form>
+					<p>Don’t have an account? <a href="register-page.html" class="modal-form-a">Sing up</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- login form modal popup html end -->	
+
+	<!-- Sing up modal popup html start -->
+	<div class="modal fade sing-up-form-modal-wapper modal-show-wapper" id="sing-up-form-modal" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="sing-up-form-modal">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<img src="img/close-icon.svg" alt="">
+						</button>
+						<h2>Register</h2>
+					</div>
+					<form method="" action="" class="sing-up-form-main">
+						<div class="form-group">
+							<input type="text" name="" placeholder="Your  Name">
+						</div>
+						<div class="form-group">
+							<input type="text" name="" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="text" name="" placeholder="Password">
+							<span class="login-addon2"><img src="img/password-view-eye.svg" alt=""></span>
+						</div>
+						<div class="sing-up-btn-w">
+							<button>Create an account</button>
+						</div>
+					</form>
+					<p>or</p>
+					<div class="sing-up-with-btn">
+						<a href="#"><img src="img/sign-up-google-icon.svg" alt="">Sign Up with the Google</a>
+						<a href="#"><img src="img/sign-up-facebook.svg" alt="">Sign Up with the Facebook</a>
+						<a href="#"><img src="img/sign-up-linkedIn.svg" alt="">Sign Up with the Linkedin</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Sing up modal popup html end -->
+
+
+</body>
+
+</html>

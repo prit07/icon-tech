@@ -1,0 +1,151 @@
+body {
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 100%;
+  }
+  
+  :root {
+    --Bg: #F7F7F7;
+    --Card-Bg:#FFF;
+    --primary-orange:#F26124;
+    --Dark:#000;
+    
+ }  
+
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  
+.navbar-brand { display: none; }
+
+  #wrapper { padding-left: 0;  transition: all 0.5s ease; position: relative;}
+  #sidebar-wrapper {
+    padding: 24px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    position: fixed;
+    left: 288px;
+    width: 0;
+    height: 100%;
+    margin-left: -288px;
+    background: var(--Card-Bg);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  }
+
+  .sidebar-wapper-main {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+.sidebar-center { display: flex; gap: 16px;}
+.sidebar-center-logo h2{ 
+   color:  var(--Card-Bg);
+   font-family: Golos Text;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px; 
+   letter-spacing: -0.72px;
+   border-radius: 8px;
+   background: #003FC1;
+   width: 60px;
+   padding: 18px 16px;
+   text-align: center;
+   margin: 0;}
+.sidebar-name h3 {
+   color: var(--Dark, #000);
+   font-family: Golos Text;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px;
+   margin: 0;
+   letter-spacing: -0.54px;
+}
+.sidebar-name p {
+   color: rgba(0, 0, 0, 0.60);
+   font-family: Golos Text;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px;
+   margin:0;
+   letter-spacing: -0.48px;
+}
+  
+  #wrapper.toggled #sidebar-wrapper {width: 288px;}
+  .sidebar-menu  a { text-decoration: none; list-style: none; display: flex; gap: 18px; padding: 18px;}
+  .sidebar-menu a {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Golos Text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.54px;
+  }
+  .sidebar-menu ul { padding: 0;}
+  .sidebar-menu ul li { text-decoration: none; list-style: none !important;  margin: 0; padding: 0; border: none;}
+  
+  #navbar-wrapper {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+  }
+  #wrapper.toggled #navbar-wrapper {
+      position: absolute;
+      margin-right: -288px;
+  }
+  #navbar-wrapper .navbar {
+    border-width: 0 0 0 0;
+    background-color: #eee;
+    font-size: 24px;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+
+  
+  @media (min-width: 992px) {
+
+    #wrapper { padding-left: 250px;}
+    #wrapper.toggled { padding-left: 60px;}
+    #sidebar-wrapper { width: 250px;}
+    #wrapper.toggled #sidebar-wrapper { width: 288px;}
+    #wrapper.toggled #navbar-wrapper { position: absolute; margin-right: -190px;}
+    #wrapper.toggled #content-wrapper { position: absolute; margin-right: -190px; }
+    #navbar-wrapper { position: relative; }
+    #wrapper.toggled { padding-left: 60px; }
+    #content-wrapper {position: relative;  top: 0; }
+    #wrapper.toggled #navbar-wrapper,
+    #wrapper.toggled #content-wrapper { position: relative; margin-right: 60px;}
+  }
+  
+
+  
+  @media (max-width: 992px) {
+    #content-wrapper { order: 1; }
+    .toggled { width: 30px !important; height: 30px;  display: block;}
+    .content-title { order: 0; }
+    #navbar-wrapper { display: block; }
+    .navbar-brand { display: block !important; }
+    #wrapper {padding-left: 0;}
+    #sidebar-wrapper {width: 0;padding: 0;}
+    .sidebar-wapper-main { padding: 24px;}
+    .sidebar-end { padding: 24px;}
+    #wrapper.toggled #sidebar-wrapper {width: 250px;}
+    #wrapper.toggled #navbar-wrapper { position: absolute; margin-right: -250px;}
+    #wrapper.toggled #content-wrapper {  position: absolute; margin-right: -250px;}
+    #navbar-wrapper { position: relative;}
+    #wrapper.toggled {padding-left: 250px;} 
+    #wrapper.toggled #navbar-wrapper,
+    #wrapper.toggled #content-wrapper { position: relative; margin-right: 250px;}
+  }

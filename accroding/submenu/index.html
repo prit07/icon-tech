@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js.js"></script>
+    <style>
+        *,
+:after,
+:before {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: 0;
+    text-decoration: none
+}
+
+
+
+
+
+.search-mobile button.search-button:hover {
+    color: #000;
+}
+
+#slide-out .social-icons {
+    margin-bottom: 15px;
+}
+
+#slide-out .social-icons a {
+    color: #ccc;
+    font-size: 16px;
+    padding: 0 4px;
+}
+
+#slide-out .social-icons a:hover {
+    color: #FFF;
+}
+
+#mobile-menu {
+    border-top: 1px solid #2D2D2D;
+ 
+}
+
+#mobile-menu.mobile-hide-icons i.fa {
+    display: none;
+}
+
+#slide-out #mobile-menu .mega-menu-block {
+    padding: 0 !important;
+    background: transparent !important;
+    min-height: inherit !important;
+}
+
+#slide-out #mobile-menu ul ul,
+#slide-out #mobile-menu .sub-menu-columns-item{
+    display: none;
+    background: #333;
+}
+
+#slide-out #mobile-menu li {
+    list-style: none;
+    position: relative
+}
+
+#slide-out #mobile-menu ul li.menu-item-has-children i.mobile-arrows{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    border-left: 1px solid #333;
+    margin: 0;
+    cursor: pointer;
+    display: block;
+}
+
+#slide-out #mobile-menu a {
+    color: #ccc;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 0;
+    border-bottom: 1px solid #2D2D2D;
+}
+
+#slide-out #mobile-menu a:hover {
+    background: #111;
+    color: #FFF;
+}
+
+#slide-out #mobile-menu ul ul a {
+    font-size: 14px;
+    padding-left: 30px
+}
+
+#slide-out #mobile-menu ul ul ul a {
+    font-size: 12px;
+    padding-left: 40px
+}
+
+#slide-out #mobile-menu ul ul ul a {
+    padding-left: 50px
+}
+
+#slide-out #mobile-menu ul ul ul ul a {
+    padding-left: 60px
+}
+
+#mobile-menu li.menu-item-home a:before {
+ 
+}
+
+#mobile-menu .mobile-arrows {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#mobile-menu .mobile-arrows.is-open {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+    </style>
+</head>
+<body>
+
+    <div id="slide-out">
+        <div id="mobile-menu" class="nav-mobile">
+           <div class="main-menu">
+     
+     <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">Tech</a></li>
+     
+     <li class="menu-item-has-children has-children"><a href="#">World</a>
+     <ul class="sub-menu">
+         <li><a href="#tie-foods/">Foods</a></li>
+         <li><a href="#tie-games/">Games</a></li>
+         <li><a href="#tie-travel/">Travel</a></li>
+     </ul>
+     </li>
+     
+     <li class="menu-item-has-children has-children"><a href="#">Top Global News</a>
+     <ul class="sub-menu">
+         <li><a href="#automotive/">Automotive</a></li>
+         <li><a href="#healthcare/">Healthcare</a></li>
+         <li><a href="#industries/">Industries</a></li>
+         <li><a href="#markets/">Markets</a></li>
+         <li><a href="#technology/">Technology</a></li>
+     </ul>
+     </li>
+     
+     <li><a href="category/retail/">Retail</a></li>
+     
+     <li class="menu-item-has-children has-children"><a href="#">Business</a>
+     <ul class="sub-menu">
+         <li><a href="#entrepreneurs/">Entrepreneurs</a></li>
+         <li><a href="#eurozone/">Eurozone</a></li>
+         <li class="menu-item-has-children has-children"><a href="#investments/">Investments</a>
+         <ul class="sub-menu">
+             <li><a href="#investments/featured/">Featured</a></li>
+             <li><a href="#investments/tie-life-style/">Life Style</a></li>
+         </ul>
+     </li>
+         <li><a href="#real-estate/">Real Estate</a></li>
+     
+     </ul>
+     </li>
+     <li><a href="#uncategorized/">Uncategorized</a></li>
+     </ul>
+     
+           </div> <!-- .main-menu -->
+        </div> <!-- #mobile-menu -->
+     </div> <!-- #slide-out -->
+    
+</body>
+</html>

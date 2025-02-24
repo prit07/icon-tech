@@ -1,0 +1,21 @@
+Amazing Landing with High Conversion Rate
+
+CPA Landing Pages Collection: https://bit.ly/landingpagecpa
+CPA Methods, Mentoring, niche, etc: https://bit.ly/cpamethods
+
+--------------------------------------------------------------
+
+
+How to edit the landing page:
+
+Check the tutorial: https://bit.ly/editcpalp
+
+You can use search and replace function in notepad or others to save time.
+
+MYGAME - Change with your game Name
+RESSOURCE1 - Change with resource 1
+RESSOURCE2 - Change with resource 2
+MYLOCKER - Change with your locker URL
+
+Replace with your games images in /img
+

@@ -1,0 +1,18 @@
+body { margin: 0; padding: 0; background-color: black;  }
+
+.heading { padding: 10px; color: white;}
+.box { margin: 20px 0px; text-align: center; padding: 10px; color: white; border-radius: 20px;}
+#bigbox {height: 150px; width: 200px; background-color: red;}
+#smallBox { height: 100px; width: 150px; background-color: blue;}
+#btn {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

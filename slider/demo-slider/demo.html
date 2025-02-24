@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+            integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            .gallery .owl-item.active.center {
+                transform: scaleY(1) !important;
+            }
+
+            .gallery .owl-item.left,
+            .gallery .owl-item.right {
+                transform: scaleY(0.8) !important;
+            }
+
+
+            .gallery .owl-item.left-last ,
+            .gallery .owl-item.right-last {
+                transform: scaleY(0.7) !important;
+            }
+
+
+            .gallery .owl-item {
+                transform: scaleY(0.7) !important;
+                transition: 0.2s;
+            }
+
+        </style>
+    </head>
+
+    <b>
+        <section class="screenshots">
+            <div class="wrapper">
+                <div class="content">
+                    <h3>Take a look at our screenshots</h3>
+                    <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer,
+                        or a PM, or a UX designer, why develop this totally separate skill?</p>
+
+                    <div class="gallery owl-carousel" id="owl-item-carousel">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                        <img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <script>
+            $(function () {
+                var itemClass = $('#owl-item-carousel');
+                itemClass.on('initialized.owl.carousel', function (e) {
+                    var idx = e.item.index;
+                    $('.owl-item').removeClass('middle');
+                    $('.owl-item').removeClass('left');
+                    $('.owl-item').removeClass('right');
+                    $('.owl-item').removeClass('left-last');
+                    $('.owl-item').removeClass('right-last');
+                    $('.owl-item').eq(idx).addClass('middle');
+                    $('.owl-item').eq(idx - 1).addClass('left');
+                    $('.owl-item').eq(idx + 1).addClass('right');
+                    $('.owl-item').eq(idx - 2).addClass('left-last');
+                    $('.owl-item').eq(idx + 2).addClass('right-last');
+                });
+                $('#owl-item-carousel').owlCarousel({
+                    center: true,
+                    items: 5,
+                    nav:true,
+                    loop: true, 
+                    navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                    pagination: true
+                });
+
+                itemClass.on('translate.owl.carousel', function (e) {
+                    idx = e.item.index;
+                    $('.owl-item').removeClass('middle');
+                    $('.owl-item').removeClass('left');
+                    $('.owl-item').removeClass('right');
+                    $('.owl-item').removeClass('left-last');
+                    $('.owl-item').removeClass('right-last');
+                    $('.owl-item').eq(idx).addClass('middle');
+                    $('.owl-item').eq(idx - 1).addClass('left');
+                    $('.owl-item').eq(idx + 1).addClass('right');
+                    $('.owl-item').eq(idx - 2).addClass('left-last');
+                    $('.owl-item').eq(idx + 2).addClass('right-last');
+                });
+            }); 
+        </script>
+        </body>
+
+    </html>

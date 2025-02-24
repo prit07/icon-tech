@@ -1,0 +1,119 @@
+ body { margin: 0; padding: 0; box-sizing: border-box;}
+
+
+
+.faq_accordion_wapper { padding: 20px 0;} 
+.faq_accordion_wapper a {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    color: #2C2112 !important;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: -0.54px;
+}
+
+.faq_accordion_wapper a { width: 95% !important;}
+.faq_accordion_wapper .faq_content { display: none; padding: 4px 0px 0px 0;}
+.faq_accordion_item {
+    border-radius: 8px;
+    border: 3px solid #F0F0F5;
+    background: #FFF;
+    padding: 0 32px;
+    margin-bottom: 15px;
+}
+.faq_accordion_item .faq_menu:after {
+    font-family: 'Font Awesome\ 5 Free';
+    content: '\f078';
+    position: absolute;
+    right: 18px;
+    top: 22px;
+    font-size: 18px;
+    color: #2C2112;
+    text-align: center;
+    font-weight: 900;
+}
+.faq_accordion_item.active .faq_menu::after { top: 22px; content: '\f077'; color: #2C2112;}
+.faq_accordion_item .faq_menu { background-color: #fff; padding: 20px 0px; position: relative;}
+
+
+
+
+
+
+
+
+.well-be-launching-input p {
+    display: flex;
+}
+.well-be-launching-input p span input {
+    border-radius: 12px 0px 0px 12px;
+    width: 100%;
+    background: #FFF !important;
+    padding: 24px 40px;
+    color: rgba(52, 49, 45, 0.50);
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    border: 0;
+}
+
+
+
+
+.well-be-launching-input p {
+    display: flex;
+}
+
+.wpcf7-form-control-wrap {
+    position: relative;
+    width: 100%;
+}
+.wpcf7-spinner {
+    width: 0 !important;
+}
+
+.wpcf7-email {
+    border-radius: 12px 0px 0px 12px !important;
+    width: 100% !important;
+    background: #FFF;
+    padding: 19px 40px !important;
+    color: rgba(52, 49, 45, 0.50) !important;
+    font-family: "Aktiv Grotesk Corp" !important;
+    font-size: 32px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 120% !important;
+    border: 0 !important;
+}
+.wpcf7-submit {
+    width: 100% !important;
+    max-width: 249px !important;
+    border-radius: 0px 12px 12px 0px !important;
+    background: #AF593C!important;
+    color: #FFF !important;
+    font-family: Inter !important;
+    font-size: 32px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 120% !important;
+    letter-spacing: -1.28px !important;
+    display: flex !important;
+    justify-content: center !important; 
+    align-items: center !important; 
+    -webkit-border-radius: 0px 12px 12px 0px !important;
+    -moz-border-radius: 0px 12px 12px 0px !important;
+    -ms-border-radius: 0px 12px 12px 0px !important;
+    -o-border-radius: 0px 12px 12px 0px !important;
+}

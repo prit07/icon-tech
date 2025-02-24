@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stevenbenner.github.io/jquery-powertip/styles/jquery.powertip.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://stevenbenner.github.io/jquery-powertip/scripts/jquery.powertip.js"></script>
+<style>
+
+    #mousefollow-examples div {
+        background-color: #EEE;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 50px 0;
+    }
+    
+    #mouseon-examples div {
+        background-color: #EEE;
+        text-align: center;
+        width: 200px;
+        padding: 40px;
+    }
+    
+    #api-examples input {
+        background-color: #EEE;
+        margin: 10px;
+        padding: 10px 30px;
+    }
+    
+    @media (max-width: 640px) {
+        input { 
+            width: 100% 
+        }
+     
+    }
+    </style>
+</head>
+<body>
+  
+
+    <div id="mouseon-examples">
+        <h2>Mouse on to popup examples</h2>
+        <div>
+            The PowerTip for this box will appear on the right and you will be able to interact with its content.
+        </div>
+    </div>
+
+</body>
+<script>
+
+
+// mouse-on examples
+$('#mouseon-examples div').data('powertipjq', $([
+    '<p><b>Here is some content</b></p>',
+    '<p><a href="http://stevenbenner.com/">Maybe a link</a></p>',
+    '<p><code>{ placement: \'e\', mouseOnToPopup: true }</code></p>'
+].join('\n')));
+
+$('#mouseon-examples div').powerTip({
+    placement: 'e',
+    smartPlacement: true,
+    openEvents: ['click'], 
+    closeEvents: ['click'], 
+    mouseOnToPopup: true, 
+    followMouse: false 
+});
+
+// // hook custom onclick function
+// $('#mouseon-examples div').on('click', function() {
+// 	$.powerTip.toggle(this);
+// });
+
+
+</script>
+</html>

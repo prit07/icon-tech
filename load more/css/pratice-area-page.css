@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	background: var(--main_bg);
+	padding: 0;
+}
+:root {
+	--Blacker_Text:'Plus Jakarta Sans', sans-serif; 
+	--Manrope:'Plus Jakarta Sans', sans-serif;
+
+	--main_bg:#DCE4ED;
+	--main_bg_1:#D4AF37;
+	--main_bg_2:#FFF;
+	--main_bg_3:#2B4C65;
+	--main_bg_4:#375B77;
+	--main_bg_5:#1B3344;
+	--main_bg_6:#FBFBFB;
+	--main_bg_7: #CDD6E0;
+
+	--main_title_1:#3E6E7F;
+	--main_title_2:#2B4C65;
+	--main_title_3:#fff;
+	--main_text_1:#555966;
+	--main_text_2:#FFF;
+	--main_text_3:#AEB6BF;
+	--main_text_4:#A1B6C6;
+	--main_text_5:#DCF0FF;
+	--main_text_6:#D4AF37;
+
+	--btn_color_1:#D4AF37;
+	--border_color:#D4AF37;
+	--border_color_1:#2B4C65;
+	--border_color_2:#DCE4ED;
+	--border_color_3:#555966;
+	--border_color_4:#fff;
+	--border_color_5:#396383;
+
+}
+a:hover { text-decoration:none; }
+
+
+
+/*  browse by states section start */
+.browse-by-states-section{
+	padding: 48px 0 50px 0;
+	background: var(--main_bg);
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.browse-by-states-section .container{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.browse-box .browse-bottom-border { border-bottom: 2px solid var(--border_color_4); }
+.browse-tabs { display: flex; justify-content: center; margin: 0; padding: 0; }
+.browse-tabs li { list-style: none; padding: 0 40px 20px 40px; position:relative; }
+.browse-tabs li.active:before { 
+	content:'';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid  var(--border_color_1); 
+}
+.browse-tabs li a {
+	cursor: pointer;
+	color:  var(--main_text_1);
+	font-family: var(--Blacker_Text);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.24px;
+	margin: 0;
+}
+.browse-tabs li.active a { color: var(--main_title_2); font-weight: 700; }
+.browse-box { display: flex; flex-direction: column; gap: 40px; }
+.content.active { display: block !important; }
+.content { display: none; }
+
+/*browse by states   */
+
+.browse-states { display: none;}
+.browse-states p { margin: 0;}
+.browse-states p a{ 
+  color: var(--main_bg_3);
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 212.5% */
+}
+ .load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.load-more a {
+    color: var(--main_title_2);
+    font-family: var(--Manrope);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 16px 90px;
+    border-radius: 4px;
+    border: 1px solid var(--main_bg_2);
+    background: var(--main_bg_2);
+} 
+
+	
+/* Legal Guides section end */
+

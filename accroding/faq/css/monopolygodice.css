@@ -1,0 +1,57 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+
+
+.accordion-faq>.card .card-header {
+    margin-bottom: 0;
+}
+
+.accordion-faq .card {
+    margin-bottom: 15px;
+    border-radius: 0.375rem !important;
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+}
+
+.collapse {
+    grid-column: 1 / -1;
+}
+.accordion-faq .card-header:after {
+    content: "";
+    border: solid #314584;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    position: absolute;
+    right: 15px;
+    margin-top: 5px;
+}
+
+.accordion-faq.accordion>.card {
+    overflow: hidden;
+    border-color: #ebebeb;
+    border-width: 1px 1px 0 1px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row dense;
+}
+.accordion-faq .card-header.collapsed:after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.accordion-faq.accordion .card-header {
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 0;
+}
+
+.accordion-faq.accordion>.card .collapse.show {
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}

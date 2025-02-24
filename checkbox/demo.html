@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const checkboxes = document.querySelectorAll('.wc-pao-addon-checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        checkboxes.forEach(otherCheckbox => {
+                            if (otherCheckbox !== this) {
+                                otherCheckbox.checked = false;
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="form-row form-row-wide wc-pao-addon-wrap">
+
+        <div class="wc-pao-addon-2337-0-0">
+            <input type="checkbox" id="2337-0-0" data-restrictions="[]" class="wc-pao-addon-field wc-pao-addon-checkbox" name="addon-2337-0[]" data-raw-price="" data-price="" data-price-type="flat_fee" value="100g" data-label="100g">
+            <label for="2337-0-0">
+                100g 		</label>
+        </div>
+    
+        <div class="wc-pao-addon-2337-0-1">
+            <input type="checkbox" id="2337-0-1" data-restrictions="[]" class="wc-pao-addon-field wc-pao-addon-checkbox" name="addon-2337-0[]" data-raw-price="0.15" data-price="0.15" data-price-type="flat_fee" value="125g" data-label="125g">
+            <label for="2337-0-1">
+                125g <span class="wc-pao-addon-price">(+<span class="woocommerce-Price-amount amount">0,15&nbsp;<span class="woocommerce-Price-currencySymbol">€</span></span>)</span>		</label>
+        </div>
+    
+        <div class="wc-pao-addon-2337-0-2">
+            <input type="checkbox" id="2337-0-2" data-restrictions="[]" class="wc-pao-addon-field wc-pao-addon-checkbox" name="addon-2337-0[]" data-raw-price="0.30" data-price="0.3" data-price-type="flat_fee" value="150g" data-label="150g">
+            <label for="2337-0-2">
+                150g <span class="wc-pao-addon-price">(+<span class="woocommerce-Price-amount amount">0,30&nbsp;<span class="woocommerce-Price-currencySymbol">€</span></span>)</span>		</label>
+        </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+	margin: 0;
+	background: var(--main_bg);
+	padding: 0;
+}
+:root {
+	--Blacker_Text:'Plus Jakarta Sans', sans-serif; 
+	--Manrope:'Plus Jakarta Sans', sans-serif;
+
+	--main_bg:#DCE4ED;
+	--main_bg_1:#D4AF37;
+	--main_bg_2:#FFF;
+	--main_bg_3:#2B4C65;
+	--main_bg_4:#375B77;
+	--main_bg_5:#1B3344;
+	--main_bg_6:#FBFBFB;
+	--main_bg_7: #CDD6E0;
+
+	--main_title_1:#3E6E7F;
+	--main_title_2:#2B4C65;
+	--main_title_3:#fff;
+	--main_text_1:#555966;
+	--main_text_2:#FFF;
+	--main_text_3:#AEB6BF;
+	--main_text_4:#A1B6C6;
+	--main_text_5:#DCF0FF;
+	--main_text_6:#D4AF37;
+
+	--btn_color_1:#D4AF37;
+	--border_color:#D4AF37;
+	--border_color_1:#2B4C65;
+	--border_color_2:#DCE4ED;
+	--border_color_3:#555966;
+	--border_color_4:#fff;
+	--border_color_5:#396383;
+}
+
+/* privecy banner section css start */
+.privecy-banner-main-wapper{ overflow:hidden; position:relative; background-color:var(--main_bg_2); }
+.privecy-banner-wapper{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 536px;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: cover !important;
+	padding-top: 86px;
+}
+.privecy-text-wapper { max-width: 700px; width: 100%; margin: auto; }
+.privecy-text-wapper h1 {
+	margin: 0;
+	color: var(--main_title_3);
+	font-family:var(--Manrope);
+	font-size: 56px;
+	font-style: normal;
+	text-align: center;
+	font-weight: 700;
+	line-height: 62px;
+	letter-spacing: -1.68px;
+	text-transform: capitalize;
+	padding-bottom: 32px;
+}
+.privecy-text-wapper p {
+	color: var(--main_title_3);
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+}
+.privecy-text-wapper p:last-child{ margin-bottom:0; }
+/* privecy banner section css end */
+
+/* privecy section b css start */
+.privecy-section-b-wapper { 
+	background:var(--main_bg);
+	padding: 183px 0 80px 0;
+	position: relative;
+	z-index: 1;
+}
+.privecy-section-b-wapper:before{
+	content: '';
+	background: var(--main_bg_1);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: -19px;
+	position: absolute;
+	left: -140px;
+	z-index: -2;
+	height: 100%;
+}
+.privecy-section-b-wapper::after {
+	content: '';
+	position: absolute;
+	right: -156px;
+	top: 16px;
+	background: var(--main_bg_2);
+	width: 125%;
+	height: 120%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.privecy-us-text { display:flex; flex-direction:column; gap:12px; }
+.privecy-section-text { display:flex; flex-direction:column; gap:20px; }
+.privecy-section-text h3 {
+	margin: 0;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: -0.2px;
+}
+.privecy-section-text p {
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: -0.18px;
+	margin: 0;
+}
+
+
+/* privecy section b css end */
+
+
+
+
+@media(max-width:1399px){
+
+	/* privecy section b css start */
+	.privecy-section-b-wapper::before { left: -160px }
+	.privecy-section-b-wapper::after { right: -160px; width: 121%; }
+	/* privecy section b css end */
+
+
+}
+@media(max-width:1199px){
+
+	/* privecy section b css start */
+	.privecy-section-b-wapper { padding:140px 0 80px 0 }
+	.privecy-section-b-wapper::before { width: 100%; top: -20px;  left: -145px;}
+	.privecy-section-b-wapper::after { right: -190px; width: 172%; top: 30px; }
+	/* privecy section b css end */
+
+}
+
+@media(max-width:991px){
+
+	/* privecy section b css start */
+	.privecy-section-b-wapper { padding: 100px 0 80px 0; }
+	.privecy-section-b-wapper::after { right: -259px; width: 190%; top: 10px; }
+	.privecy-section-b-wapper::before { width: 100%; top: -40px; left: -365px; }
+	/* privecy section b css end */
+
+
+}
+@media(max-width:767px){
+
+	/* abour banner serction css start */
+	.privecy-banner-wapper { height:600px; }
+	.privecy-text-wapper h1 { font-size:36px; line-height:42px; }
+	.privecy-text-wapper p { font-size:16px; line-height:24px; }
+	/* abour banner serction css end */
+
+	/* privecy section b css start */
+	.privecy-section-b-wapper { padding: 100px 0 80px 0; }
+	.privecy-section-b-wapper::before { width: 100%; top: -28px; left: -311px; }
+	.privecy-section-b-wapper::after { right: -600px; width: 403%; top: 0; }
+
+	.privecy-review-title h2 { font-size:30px; line-height:38px; }
+	.privecy-review-wapper { padding-top:60px; }
+	/* privecy section b css end */
+
+
+}
+@media(min-width:1700px){
+	.lawyers-list-wapper::after { right:-192px; }
+}

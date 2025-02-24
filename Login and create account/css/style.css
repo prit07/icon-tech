@@ -1,0 +1,323 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container-w { max-width: 1920px; width: 95%; margin: auto; position: relative; padding: 0 15px;}
+
+
+
+.login-create-account-section{
+	width: 100%;
+	min-height: 100vh;
+}
+.login-create-account-section .container-login {
+	height: 100%;
+	display: grid;
+	grid-column-gap: 0;
+	grid-row-gap: 0;
+	grid-template-columns: repeat(2,1fr);
+}
+.login-create-account-section .container-login .login-left-wapper, .login-create-account-section .container-login .login-right-wapper{
+	width: 100%;
+	height: 100%;
+}
+.login-create-account-section .container-login .login-left-wapper img{
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+}
+
+
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content{
+	max-width: 370px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content .title-login h2{
+	font-family: Lora;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 54px;
+	letter-spacing: 0.25px;
+	text-transform: capitalize;
+	color: #2a2a2a;
+	margin: 0;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content ul.tabs{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	list-style: none;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content ul.tabs li{
+	padding: 10px 0;
+	width: 100%;
+	border-bottom: 2px solid #efefef;
+	cursor: pointer;
+	text-align: center;
+	color: #2A2A2A;
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content ul.tabs li.active{
+	border-bottom: 2px solid #000;
+	color: #000;
+	font-weight: 800;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form label{
+	color: #000;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+  padding: 0 0 5px 0;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form input{
+	width: 100%;
+	height: 35px;
+	background: #FFF;
+	border-radius: 0;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form input:focus{
+	box-shadow: none;
+	border-color: #ced4da;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form .form-group{
+	margin-bottom: 15px;
+}
+
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form .form-group.pass-cus .in-icon{
+	position: relative;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form .form-group.pass-cus .in-icon span {
+	position: absolute;
+	right: 7px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 22;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form .form-group.pass-cus a {
+	margin-top: 12px;
+	padding: 0;
+	display: flex;
+	text-decoration: underline;
+	color: #2A2A2A;
+	font-family: Lora;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form .inicia-btn {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.login-create-account-section .container-login .login-right-wapper .login-right-main-content form .inicia-btn a{
+	width: 100%;
+	padding: 10px;
+	background: #000;
+	color: #FFF;
+	text-align: center;
+	font-family: Lora;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration: none;
+}
+.login-other-all-btn{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.login-other-all-btn a{
+	width: 100%;
+	padding: 12px 0;
+	border: 1px solid #ced4da;
+	display: flex;
+	justify-content: center;
+	font-family: Lora;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration: none;
+	color: #000;
+}
+.login-other-all-btn a span img{
+	margin-right: 10px;
+}
+.login-other-all-btn a span{
+	max-width: 180px;
+	width: 100%;
+}
+.border-cu{
+	margin: 32px 0;
+	display: flex;
+	width: 100%;
+	height: 1px;
+	position: relative;
+	background: #ced4da;
+}
+.border-cu::before{
+	content: '';
+	width: 10%;
+	height: 100%;
+	background: #FFF;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.border-cu::after {
+	content: 'o';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	padding: 0px;
+	line-height: 0;
+	font-size: 18px;
+	top: -2px;
+	color: #3d3f40;
+}
+.login-form .title_login h4{
+	color: #000;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.tabs{
+    display: flex;
+}
+
+.tabs li h2{
+    cursor: pointer;
+}
+.tab-rg-content{
+    display: none;
+	padding-top: 30px;
+}
+.tab-rg-content.active{
+    display: block;
+}
+.check-quiero-r .form-check label{
+	margin: 0 !important;
+	padding: 0 !important;
+	color: #2a2a2a !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+}
+.check-quiero-r .form-check input{
+	width: 15px !important; 
+	height: 15px !important;
+	margin-top: 3px;
+}
+.check-quiero-r .form-check label.form-check-label a {
+	margin: 0 !important;
+	padding: 0 !important;
+	display: inline-block !important;
+	color: #000 !important;
+	font-weight: 800 !important;
+	font-size: 14px !important;
+}
+.check-quiero-r{
+	padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ye-tienes{
+	text-align: center;
+}
+.ye-tienes span{
+	font-family: Lora;
+	font-style: normal;
+	line-height: normal;
+	margin: 0;
+  padding: 0;
+  color: #2a2a2a;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+}
+.ye-tienes span a{
+	padding: 0 !important;
+	background: transparent !important;
+	color: #000 !important;
+	font-size: 14px !important;
+  font-weight: 800 !important;
+  text-decoration: underline !important; 
+}
+@media(max-width:1440px){
+
+}
+
+
+
+@media(max-width:1199px){
+	
+}
+@media(max-width:1024px){
+	
+}
+
+@media(max-width:991px){
+	.login-create-account-section .container-login {
+		grid-template-columns: repeat(1,1fr);
+		position: relative;
+		background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/login.jpg) no-repeat;
+		background-size: cover;
+	}
+	/* .login-create-account-section .container-login .login-right-wapper {
+		position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+	} */
+	.login-create-account-section .container-login .login-right-wapper .login-right-main-content {
+		max-width: 370px;
+		width: 100%;
+		margin: 30px auto;
+		padding: 20px;
+		background: #FFF;
+	}
+	.login-create-account-section .container-login .login-left-wapper img{
+		display: none;
+	}
+}
+
+
+@media(max-width:767px){
+	.login-create-account-section .container-login .login-right-wapper .login-right-main-content {
+		max-width: 350px;
+		width: 100%;
+		margin: 30px auto;
+		padding: 20px;
+		background: #FFF;
+	}
+}

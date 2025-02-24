@@ -1,0 +1,173 @@
+body {
+	margin: 0;
+	background: var(--main_bg);
+	padding: 0;
+}
+:root {
+	--Blacker_Text:'Plus Jakarta Sans', sans-serif; 
+	--Manrope:'Plus Jakarta Sans', sans-serif;
+
+	--main_bg:#DCE4ED;
+	--main_bg_1:#D4AF37;
+	--main_bg_2:#FFF;
+	--main_bg_3:#2B4C65;
+	--main_bg_4:#375B77;
+	--main_bg_5:#1B3344;
+	--main_bg_6:#FBFBFB;
+	--main_bg_7: #CDD6E0;
+
+	--main_title_1:#3E6E7F;
+	--main_title_2:#2B4C65;
+	--main_title_3:#fff;
+	--main_text_1:#555966;
+	--main_text_2:#FFF;
+	--main_text_3:#AEB6BF;
+	--main_text_4:#A1B6C6;
+	--main_text_5:#DCF0FF;
+	--main_text_6:#D4AF37;
+
+	--btn_color_1:#D4AF37;
+	--border_color:#D4AF37;
+	--border_color_1:#2B4C65;
+	--border_color_2:#DCE4ED;
+	--border_color_3:#555966;
+	--border_color_4:#fff;
+	--border_color_5:#396383;
+}
+html { scroll-behavior: smooth; }
+
+/* validation page css start */
+.validation-banner-wapper {
+	padding: 72px 0 120px;
+	position: relative;
+}
+.validation-banner-card {  padding-bottom: 40px; position: relative; }
+.validation-banner-card { max-width: 982px; width: 100%; margin: auto; }
+.validation-banner-card h1 {
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 56px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 62px;
+	letter-spacing: -1.68px;
+	text-transform: capitalize;
+	margin: 0;
+	padding-bottom: 32px;
+}
+.validation-banner-card p{
+	color: var(--main_text_1);
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+	margin: 0;
+}
+
+.validation-main-wapper { 
+	margin: 48px 0; 
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	position: relative;
+	border-radius: 4px;
+	border: 2px solid rgba(43, 76, 101, 0.10);
+	background: var(--main_bg_2);
+}
+.validation-main-left  { max-width:55%; width:100%; }
+.validation-main-right { max-width:45%; width:100%; position:relative; }
+.validation-main-left { background: var(--main_bg_3); border-radius:4px 0 0 4px; }
+.validation-main-title {
+	background: var(--main_bg_7);
+	padding: 19px 30px;
+	border-radius:4px 0 0 0;
+}
+.validation-main-title h3 {
+	margin: 0;
+	color: var(--main_title_2);
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+}
+.validation-main-left ul {
+	padding: 30px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.validation-main-left ul li img {
+	background:var(--main_bg_7);
+	width: 28px;
+	height: 28px;
+	padding: 7px;
+	border-radius: 100%;
+}
+.validation-main-left ul li{ 
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+}
+.validation-file-upload { display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative; height:300px; }
+.validation-main-right img {
+	width: 72px;
+	height: 72px;
+}
+.validation-main-right span {
+	color: var(--main_title_2);
+	text-align: center;
+	font-family:var(--Manrope);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 108.333% */
+}
+.validation-main-right input {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+}
+.validation-submit-btn { text-align:center; margin-bottom: }
+.validation-submit-btn button{
+	margin: auto;
+	border: 0;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	max-width: 281px;
+	width: 100%;
+	height: 48px;
+	background-color:var(--main_bg_1) ;
+	border-radius: 4px;
+}
+/* validation page css css end */
+
+
+@media(max-width:767px){
+	/* validation page css start */
+	.validation-banner-wapper { padding:40px 0 60px;  }
+	.validation-banner-card h1 { font-size: 36px; line-height: 42px; }
+	.validation-main-left  { max-width:100%; width:100%; }
+	.validation-main-right { max-width:100%; width:100%; position:relative; }
+	.validation-main-left ul, .validation-main-title { padding:15px; }
+	/* validation page css end */
+}

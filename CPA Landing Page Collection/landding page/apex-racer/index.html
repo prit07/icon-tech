@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Racer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <div id="bg">
+        <canvas></canvas>
+        <canvas></canvas>
+        <canvas></canvas>
+      </div>
+
+
+
+    <div class="main-div-wapper">
+        <div class="main-div-all-step-wapper ">
+            <div class="logo">
+                <img class="animated bounceIn animation-delay-200" src="img/logo.png" alt="">
+            </div>
+            <div class="titel-h animated bounceIn animation-delay-200">
+                <h2>APEX Racer</h2>
+                <h3>Generator</h3>
+                <h4>Gold & Cash</h4>
+            </div>
+            <div class="step-one animated bounceIn animation-delay-200 active">
+                <form action="">
+                    <div class="form-group">
+                        <label for="user_name">Enter your APEX Racer Account ID/Username</label>
+                        <input type="text" id="user_name" placeholder="Username/ID" class="form-control">
+                        <p class="error_text">Plz Enter Username/ID</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="platform">Choose Platform</label>
+                        <div class="platform-wapper" id="platform">
+                            <div class="platform-card active" value="Android">
+                                <div class="platform-card-img">
+                                    <i class="fab fa-android"></i>
+                                </div>
+                                <div class="platform-card-inner">
+                                    <h4>Android</h4>
+                                </div>
+                            </div>
+                            <div class="platform-card "  value="iOS">
+                                <div class="platform-card-img">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                                <div class="platform-card-inner">
+                                    <h4>iOS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-c">
+                    <a class="step-one-btn" href="javascript:void(0)">Continue</a>
+                </div>
+            </div>
+            <div class="step-two animated bounceIn animation-delay-200">
+                <div class="step-two-wapper">
+                    <div class="step-two-search-icon active">
+                        <div class="search-img">
+                            <img class="animated pulse infinite" src="img/Mask group (7).png" alt="">
+                        </div>
+                        <div class="search-text">
+                            <h5>Searching For Username/ID...</h5>
+                            <h4 class="user-nd animated pulse infinite"></h4>
+                        </div>
+                    </div>
+                    <div class="step-two-check-icon animated bounceIn animation-delay-200">
+                        <div class="check-icon">
+                            <img class="animated pulse infinite" src="img/tt1.png" alt="">
+                        </div>
+                        <div class="check-text">
+                            <h5>Player Found</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-three animated bounceIn animation-delay-200">
+                <div class="step-three-wapper">
+                    <div class="step-three-gold-main-wapper">
+                        <label for="gold">Select APEX Racer Gold</label>
+                        <div class="select-main-wapper" id="gold">
+                            <div class="select-op gold_card active" value="25000">
+                                <div class="select-op-img">
+                                    <img src="img/gold-removebg-preview.png" alt="">
+                                </div>
+                                <div class="select-op-text">
+                                    <h4>25000 <br> Gold</h4>
+                                </div>
+                            </div>
+                            <div class="select-op gold_card" value="45000">
+                                <div class="select-op-img">
+                                    <img src="img/gold-removebg-preview.png" alt="">
+                                </div>
+                                <div class="select-op-text">
+                                    <h4>45000 <br> Gold</h4>
+                                </div>
+                            </div>
+                            <div class="select-op gold_card" value="95000">
+                                <div class="select-op-img">
+                                    <img src="img/gold-removebg-preview.png" alt="">
+                                </div>
+                                <div class="select-op-text">
+                                    <h4>95000 <br> Gold</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="step-three-cash-main-wapper">
+                        <label for="cash">Select APEX Racer Cash</label>
+                        <div class="select-main-wapper" id="cash">
+                            <div class="select-op cash_card active" value="150000">
+                                <div class="select-op-img">
+                                    <img src="img/res2 (4).png" alt="">
+                                </div>
+                                <div class="select-op-text">
+                                    <h4>150000 <br> Cash</h4>
+                                </div>
+                            </div>
+                            <div class="select-op cash_card" value="450000">
+                                <div class="select-op-img">
+                                    <img src="img/res2 (4).png" alt="">
+                                </div>
+                                <div class="select-op-text">
+                                    <h4>450000 <br> Cash</h4>
+                                </div>
+                            </div>
+                            <div class="select-op cash_card" value="950000">
+                                <div class="select-op-img">
+                                    <img src="img/res2 (4).png" alt="">
+                                </div>
+                                <div class="select-op-text">
+                                    <h4>950000 <br> Cash</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="btn-c">
+                        <a class="step-three-btn" href="javascript:void(0)">Continue</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-fore animated bounceIn animation-delay-200">
+                <div class="step-fore-wapper">
+                    <div class="step-fore-setting-change-wapper animated bounceIn animation-delay-200 active">
+                        <div class="setting-img">
+                            <img src="img/setting.png" alt="">
+                        </div>
+                        <div class="step-fore-text">
+                            <h5>Getting Ready</h5>
+                        </div>
+                    </div>
+                    <div class="step-fore-gold-change-wapper animated bounceIn animation-delay-200">
+                        <div class="step-fore-gold-card">
+                            <div class="step-fore-gold-card-img">
+                                <img src="img/gold-removebg-preview.png" alt="">
+                            </div>
+                            <div class="step-fore-gold-card-inner">
+                                <h3 class="h-progress-content">
+                                    <span class="back-gold-one"></span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="step-fore-text">
+                            <h5>Generating <span class="back-gold-two"></span> Gold</h5>
+                            <h4 class="user-lnd"></h4>
+                        </div>
+                    </div>
+                    <div class="step-fore-cash-change-wapper animated bounceIn animation-delay-200">
+                        <div class="step-fore-gold-card">
+                            <div class="step-fore-gold-card-img">
+                                <img src="img/res2 (4).png" alt="">
+                            </div>
+                            <div class="step-fore-gold-card-inner">
+                                <h3 class="h-progress-content-t">
+                                    <span class="back-cash-one"></span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="step-fore-text">
+                            <h5>Generating <span class="back-cash-two"></span> Cash</h5>
+                            <h4 class="user-lndd"></h4>
+                        </div>
+                    </div>
+                    <div class="step-fore-finalizing-change-wapper animated bounceIn animation-delay-200">
+                        <div class="setting-img">
+                            <img src="img/setting.png" alt="">
+                        </div>
+                        <div class="step-fore-text">
+                            <h5 class="change_text_one">Finalizing</h5>
+                            <h5 class="change_text_two">Loding last step...</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="{{skills.comfort}}" aria-valuemin="0" aria-valuemax="100" > </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-five animated bounceIn animation-delay-200">
+                <div class="step-five-wapper">
+                    <div class="all-main-div">
+                        <div class="user-name-wapper">
+                            <h5>Username/ID</h5>
+                            <h4 class="username_back"></h4>
+                        </div>
+                        <div class="user-name-wapper">
+                            <h5>Platform</h5>
+                            <h4 class="platform_back"></h4>
+                        </div>
+                        <div class="user-name-wapper">
+                            <h5>Gold</h5>
+                            <h4 class="gold_back"></h4>
+                        </div>
+                        <div class="user-name-wapper">
+                            <h5>Cash</h5>
+                            <h4 class="cash_back"></h4>
+                        </div>
+                    </div>
+                    <p>In order to filter BOTs abusing our web application, you need to check your device in our system the first time you use this tool.</p>
+                    <p>Press "Verify Now" and you will be redirected to a separate page where you can enter your mobile phone number and receive a code via SMS.</p>
+                    <p>After you have entered this code on the page, your <span class="gold_back_last"></span> Gold and <span class="cash_back_last"></span> Cash will be released and you can use our tool for 48 hours</p>
+
+                    <div class="btn-c">
+                        <a href="javascript:void(0)">Verfy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

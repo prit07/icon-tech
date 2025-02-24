@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clash Of Clan</title>
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+	<div class="clash-of-clan-main-wapper animated lightSpeedIn animation-delay-200">
+		<div class="logo-wapper">
+			<img src="img/logo2.png" alt="">
+		</div>
+		<div class="all-step-wapper">
+			<div class="app-download-status-content">
+				<div class="status-row row-first">
+					<span class="status-label">Status:</span>
+					<span id="status" class="status-dynamic">Online</span>
+				</div>
+				<div class="status-row row-second odd">
+					<span class="status-label">Last Update:</span>
+					<span id="date" class="status-dynamic"></h4></span>
+				</div>
+				<div class="status-row row-last">
+					<span class="status-label">Online Users:</span>
+					<span id="online-count" class="status-dynamic"></span>
+				</div>
+			</div>
+			<div class="step-one active">
+				<div class="step-one-wapper">
+
+					<div class="title-wapper">
+						<h4>Generator</h4>
+						<h2>Clash Of Clans</h2>
+						<p>Click on the button below to begin the generator process.</p>
+						<div class="start-generator-btn">
+							<a href="javascript:void(0)" id="bt-one">Start Generator</a>
+						</div>
+						<p>After the generator completed verification, you will get your desired resouce In this APP!
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="step-two">
+				<div class="step-two-wapper animated fadeIn animation-delay-200 active">
+					<form action="">
+						<div class="form-group">
+							<label for="user-name">Enter your Username or ID</label>
+							<input type="text" class="form-control" placeholder="User Name/ID" id="user-name">
+							<p class="ero-o">Piz Enter yourname/ID</p>
+						</div>
+
+						<div class="form-group">
+							<label for="device">Choose the correct version for your phone.</label>
+							<div class="row-device" id="device">
+								<div class="col small-padding active" value="Android">
+									<div class="platform-item platform-item-1" >
+										<i class="fab fa-android"></i>
+										<span>Android</span>
+									</div>
+								</div>
+								<div class="col small-padding" value="iOS">
+									<div class="platform-item platform-item-2">
+										<i class="fab fa-apple"></i>
+										<span>iOS</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="start-generator-btn bt-two">
+							<a href="javascript:void(0)" id="bt-two">Connect</a>
+						</div>
+					</form>
+				</div>
+				<div  class="Connect-searching-wapper animated fadeIn animation-delay-200">
+					<div class="Connect-searching">
+						<div class="loader"></div>
+						<p>Connecting to <span id="name-id"></span> using <span id="device-name">Android</span> simulator</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-one progress-bar-success progress-bar-striped active g-progressbar connect_progressbar" role="progressbar">
+							</div>				
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="step-three">
+				<div class="step-three-wapper animated fadeIn animation-delay-200 active">
+					<div class="amount-of-gems-wapper">
+						<label for="amount">Select the amount of Games</label>
+						<div class="amount-of-games-row">
+							<div class="amount-item active" value="1000">
+								<img src="img/amount-logo.png" alt="">
+								<div class="amount-value">
+									<h2><strong>1000</strong> Games</h2>
+								</div>
+							</div>
+							<div class="amount-item" value="3000">
+								<img src="img/amount-logo.png" alt="">
+								<div class="amount-value">
+									<h2><strong>3000</strong> Games</h2>
+								</div>
+							</div>
+							<div class="amount-item" value="5000">
+								<img src="img/amount-logo.png" alt="">
+								<div class="amount-value">
+									<h2><strong>5000</strong> Games</h2>
+								</div>
+							</div>
+							<div class="amount-item" value="9999">
+								<img src="img/amount-logo.png" alt="">
+								<div class="amount-value">
+									<h2><strong>9999</strong> Games</h2>
+								</div>
+							</div>
+						</div>
+						<div class="start-generator-btn bt-three">
+							<a href="javascript:void(0)" id="bt-three">GENERATE</a>
+						</div>
+					</div>
+				</div>
+				<div class="last-step-search-wapper animated fadeIn animation-delay-200">
+					<div class="last-step-gen-main">
+						<img src="img/setting.png" alt="" class="setting-img active">
+						<div class="count-online-wapper">
+							<div class="count-online-card">
+								<div class="count-online-card-img">
+									<img src="img/amount-logo.png" alt="">
+								</div>
+								<div class="count-online-card-inner">
+									<h3 id="gen-amount">1000</h3>
+									<h3 id="user-name-id">Ronak</h3>
+								</div>
+							</div>
+						</div>
+						<h2 class="change-text-one">Loading...</h2>
+						<h2 class="change-text-two">Generating <span class="amount_last">1000</span> Games for <span class="id_name"></span></h2>
+						<h2 class="change-text-three">Loading Last Step</h2>
+						<div class="progress">
+							<div class="progress-bar progress-bar-two progress-bar-success progress-bar-striped active g-progressbar connect_progressbar" role="progressbar">
+							</div>				
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="step-fore">
+				<div class="step-fore-wapper animated fadeIn animation-delay-200">
+					<h2>LAST STEP</h2>
+					<p>Hello <span id="last_user"></span> ! You are almost done. <span id="last_amo">1000</span> Gems Will be added to your account ! Please complete the last step by click on the button below.	</p>
+					<div class="start-generator-btn bt-fore">
+						<a href="javascript:void(0)" id="bt-fore">VERIFY NOW</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script>
+		var starting_number = 150;
+		var random;
+		function online_count() {
+			document.getElementById("online-count").innerHTML = starting_number;
+			var randCalc = Math.floor(Math.random() * 10 + 1);
+			if (randCalc <= 5) {
+				starting_number = starting_number + Math.floor(Math.random() * 10 + 1);;
+			} else {
+				starting_number = starting_number  - Math.floor(Math.random() * 10 + 1);;
+			}
+			random = setTimeout("online_count()", 1000);
+		}
+		online_count();
+
+
+		document.getElementById("date").innerHTML = formatAMPM();
+
+		function formatAMPM() {
+			var d = new Date(),
+
+				hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
+				ampm = d.getHours() >= 12 ? 'pm' : 'am',
+				months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+			return months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ';
+		}
+
+
+
+
+
+		
+	</script>
+</body>
+
+</html>

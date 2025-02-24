@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover and Click Show</title>
+<style>
+    /* Style for the preview */
+    .preview {
+        display: none;
+    }
+
+    /* Style for the full content */
+    .full-content {
+        display: none;
+    }
+
+    /* Style for the button */
+    .button {
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<!-- Button to show preview on hover -->
+<button class="button" onmouseover="showPreview()" onclick="showFullContent()">Hover and Click Me</button>
+
+<!-- Preview content -->
+<div class="preview" id="preview">
+    <!-- Preview content goes here -->
+    This is the preview content.
+</div>
+
+<!-- Full content -->
+<div class="full-content" id="fullContent">
+    <!-- Full content goes here -->
+    This is the full content.
+</div>
+
+<script>
+    function showPreview() {
+        // Show the preview content
+        document.getElementById("preview").style.display = "block";
+    }
+
+    function showFullContent() {
+        // Show the full content
+        document.getElementById("fullContent").style.display = "block";
+    }
+</script>
+
+</body>
+</html>

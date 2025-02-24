@@ -1,0 +1,311 @@
+body {
+	margin: 0;
+	background: var(--main_bg);
+	padding: 0;
+}
+:root {
+	--Blacker_Text:'Plus Jakarta Sans', sans-serif; 
+	--Manrope:'Plus Jakarta Sans', sans-serif;
+
+	--main_bg:#DCE4ED;
+	--main_bg_1:#D4AF37;
+	--main_bg_2:#FFF;
+	--main_bg_3:#2B4C65;
+	--main_bg_4:#375B77;
+	--main_bg_5:#1B3344;
+	--main_bg_6:#FBFBFB;
+	--main_bg_7: #CDD6E0;
+
+	--main_title_1:#3E6E7F;
+	--main_title_2:#2B4C65;
+	--main_title_3:#fff;
+	--main_text_1:#555966;
+	--main_text_2:#FFF;
+	--main_text_3:#AEB6BF;
+	--main_text_4:#A1B6C6;
+	--main_text_5:#DCF0FF;
+	--main_text_6:#D4AF37;
+
+	--btn_color_1:#D4AF37;
+	--border_color:#D4AF37;
+	--border_color_1:#2B4C65;
+	--border_color_2:#DCE4ED;
+	--border_color_3:#555966;
+	--border_color_4:#fff;
+	--border_color_5:#396383;
+}
+
+
+/* banner section css start */
+.banner-section-wapper { position: relative; padding: 64px 0 0; }
+.listing-title {
+	max-width: 982px;
+	width: 100%;
+	margin: auto;
+}
+.listing-title h1 {
+	margin: 0;
+	color: var(--main_title_1);
+	text-align: center;
+	font-family: var(--Blacker_Text);
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 62px;
+	letter-spacing: -1.68px;
+	text-transform: capitalize;
+	position: relative;
+	padding-bottom: 32px;
+}
+.listing-title h1 span {
+	color: var(--main_title_2);
+}
+.listing-title p {
+	margin: 0;
+	color: var(--main_text_1);
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px; /* 144.444% */
+}
+.register-btn-wapper {
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	gap: 16px;
+	position: relative;
+	justify-content: center;
+}
+.lawyer-get-listed-btn {
+	padding: 12px 24px;
+	border-radius: 4px;
+	background: var(--main_bg_1);
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	display: inline-block;
+}
+.lawyer-get-listed-btn:hover{ color: var(--main_title_2); }
+.claim-your-profile-btn {
+	padding: 12px 24px;
+	border-radius: 4px;
+	background: var(--main_bg_3);
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	display: inline-block;
+}
+.claim-your-profile-btn:hover { color: var(--main_title_3); }
+.not-register-btn {
+	padding: 12px 24px;
+	border-radius: 4px;
+	display: inline-block;
+	border: 1.5px solid var(--border_color_1);
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.not-register-btn:hover{ color: var(--main_title_2); }
+/* banner section css end */
+
+/* Create Lawyer profile form css start */
+.create-lawyer-profile-wapper{
+	background: var(--main_bg);
+	padding: 255px 0 110px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.create-lawyer-profile-wapper:after {
+	content: '';
+	position: absolute;
+	right: -132px;
+	top: 138px;
+	background: var(--main_bg_3);
+	width: 114%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.create-lawyer-profile-wapper:before {
+	content: '';
+	background: var(--main_bg_1);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 120px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.clp-fomr-wapper{ max-width:962px; width:100%; margin:auto; padding-top:40px; }
+.clp-fomr-wapper form { display: flex; flex-direction: column; gap: 32px; }
+.clp-form-card .form-group { 
+	margin:0; 
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	column-gap: 12px;
+	row-gap: 16px;
+}
+.clp-form-card .form-group .form-col-4 { 
+	-ms-flex: 0 0 32%;
+	flex: 0 0 32%;
+	max-width: 32%;
+	position: relative;
+}
+.clp-form-card .form-group .form-col-6 {
+	-ms-flex: 0 0 55%;
+	flex: 0 0 55%;
+	max-width: 55%;
+	position: relative;
+} 
+.clp-form-title { display: flex; flex-direction: column; gap: 12px; max-width:592px; width:100%; }
+.clp-form-card { display:flex; flex-direction:column; gap:20px; }
+.clp-form-title h3 {
+	margin: 0;
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+}
+.clp-form-title p {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.80);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+}
+.clp-form-card .form-group .form-control{
+	border-radius: 4px;
+	background: var(--main_bg_2);
+	padding: 0 16px;
+	height: 48px;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	position: relative;
+}
+.clp-form-card .form-group .form-control::placeholder{
+	color: var(--main_text_1);
+}
+.clp-form-card .form-group select.form-control{
+	color: var(--main_title_2);
+	background-image: url(../img/down-arrow-b.svg) !important;
+	background-repeat: no-repeat !important;
+	background-position-x: 97% !important;
+	background-position-y: 14px !important;
+	background-size: 20px 20px !important;
+	position: relative;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	-ms-appearance: none !important;
+	-o-appearance: none !important;
+	appearance: none !important;
+}
+.clp-get-start-btn button{
+	border: 0;
+	border-radius: 4px;
+	background: var(--main_bg_1);
+	height: 48px;
+	width: 100%;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.clp-bottom-text p {
+	margin: 0;
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+}
+.clp-bottom-text p a {
+	color: var(--main_text_6);
+	text-decoration: underline;
+	font-weight: 600;
+}
+.basic-addon2 img {
+	position: absolute;
+	top: 15px;
+	right: 16px;
+	width: 18px;
+	height: 18px;
+}
+/* Create Lawyer profile form css end */
+
+
+@media(max-width:1400px){
+	/* Create Lawyer profile form css start */
+	.create-lawyer-profile-wapper:after { width: 120%; }
+	/* Create Lawyer profile form css end */
+}
+
+@media(max-width:1199px){
+	/* Create Lawyer profile form css start */
+	.create-lawyer-profile-wapper:after { width: 122%; }
+	/* Create Lawyer profile form css end */
+}
+
+@media(max-width:991px){
+	/* Create Lawyer profile form css start */
+	.create-lawyer-profile-wapper:after { width: 125%; }
+	.clp-form-card .form-group .form-col-4 { 
+		-ms-flex: 0 0 48%;
+		flex: 0 0 48%;
+		max-width: 48%;
+	}
+	.clp-form-card .form-group .form-col-6 {
+		-ms-flex: 0 0 48%;
+		flex: 0 0 48%;
+		max-width: 48%;
+	} 
+	/* Create Lawyer profile form css end */
+}
+
+@media(max-width:767px){
+	/* banner section css start */
+	.listing-title h1 { font-size:36px; line-height:42px; }
+	.listing-title p { font-size: 16px; line-height: 24px; }
+	/* banner section css end */
+
+	/* Create Lawyer profile form css start */
+	.create-lawyer-profile-wapper { padding: 145px 0 60px; }
+	.create-lawyer-profile-wapper:before { top:80px; }
+	.create-lawyer-profile-wapper:after { right: -129px; top: 98px; width: 173%; }
+	.clp-form-card .form-group .form-col-4 { 
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.clp-form-card .form-group .form-col-6 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	} 
+	/* Create Lawyer profile form css end */
+
+}

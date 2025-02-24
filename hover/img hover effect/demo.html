@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>.
+  <style>
+    body {
+      background: #4F4F4F;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h3 {
+      font-weight: 400;
+      color: #F2C94C;
+    }
+
+    h1,
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 42px;
+      height: 39px;
+      margin: 0px 20px;
+    }
+
+    .ticket {
+      position: relative;
+      height: 410px;
+      width: 690px;
+      background: black;
+      display: flex;
+      align-items: flex-end;
+      box-shadow: 0px 10px 40px rgba(0, 0, 0, .4);
+    }
+
+    .flight-info {
+      position: relative;
+      z-index: 99;
+      padding: 30px;
+    }
+
+    .flight-locations {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -20px;
+    }
+
+    canvas {
+      position: absolute;
+      border-radius: 6px;
+      z-index: 0;
+    }
+
+    .overlay {
+      position: absolute;
+      background: rgba(0, 0, 0, .2);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="ticket">
+    <div class="overlay"></div>
+    <div class="flight-info">
+      <h3>JUNE 30 2018 12:30PM</h3>
+      <div class="flight-locations">
+        <h1>LAX</h1>
+        <img src="https://cdn-images-1.medium.com/max/800/1*QFU_XYAKOGJ9nunfqvem1w.png" />
+        <h1>JFK</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- <script src="js/gsap.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://tympanus.net/Development/DistortionHoverEffect/js/hover.js"></script>
+
+  <script>
+
+    new hoverEffect({
+      parent: document.querySelector('.ticket'),
+      intensity1: 0.2,
+      intensity2: 0.1,
+      angle2: Math.PI / 2,
+      image1: 'https://upload.wikimedia.org/wikipedia/commons/3/30/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg',
+      image2: 'https://upload.wikimedia.org/wikipedia/commons/3/30/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg',
+      displacementImage: 'https://images.pexels.com/photos/1097203/pexels-photo-1097203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260?raw=true'
+    });
+  </script>
+</body>
+
+</html>

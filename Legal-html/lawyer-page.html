@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Lawyer page || legal</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/lawyer-page.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+	integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+	integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+	crossorigin="anonymous"></script>
+	<script src="js/header-footer.js"></script>
+	<script src="js/lawyer-page.js"></script>
+
+</head>
+
+<body>
+	<div class="m-overlay-bg"></div>
+	<!-- header start -->
+	<header id="h-home" class="h-home-wapper">
+		<div class="h-header-main">
+			<div class="container w-1280">
+				<div class="h-header-nav">
+					<div class="h-header-logo">
+						<a href="index.html"><img src="img/header-footer-img/Logo.svg" class="img-fluid" alt="logo"></a>
+					</div>
+					<div class="h-header-menu">
+						<div class="h-toggle-btn" id="h-toggle-btn">
+							<div class="line-card one"></div>
+							<div class="line-card two"></div>
+							<div class="line-card three"></div>
+						</div>
+						<div class="h-main-menu" id="h-sidebar-wrapper">
+							<ul>
+								<li><a href="find-a-lawyers.html">Find a Lawyer</a></li>
+								<li><a href="#">Legal Guides</a></li>
+								<li><a href="#">Laws & Regs</a></li>
+								<li><a href="glossary-of-legal-terms.html">Glossary</a></li>
+								<li><a href="about-us-page.html">About US</a></li>
+								<li><a href="contact-page.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Search-Button-Sign-Up-wapper">
+						<div class="search-box">
+							<input class="search-input" type="text" name="" placeholder="Search">
+							<a href="#" class="search-btn">
+								<img src="img/header-footer-img/h-search-icon.svg" class="search-w" alt="">
+								<img src="img/search-black-icon.svg" class="search-b" alt="">
+							</a>
+						</div>
+						<a href="javascript:void(0)" class="login-btn modal-form-a" data-target="#login-form-modal"><img src="img/user-login-icon.svg" alt="">Login</a>
+						<a href="register-page.html" class="sign-up-btn modal-form-a">Sign-Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- search html start  -->
+		<div class="search-popup">
+			<span class="search-back-drop"></span>
+			<button class="close-search"><span class="fas fa-times"></span></button>
+			<div class="search-inner">
+				<form method="post" action="search-results-page.html">
+					<div class="form-group">
+						<input type="search" name="search-field" value="" placeholder="Search...">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- search html end  -->
+	</header>
+	<!-- header end -->
+
+	<!-- Lawyer page breadcrumbs section html start -->
+	<section class="breadcrumbs-wapper">
+		<div class="container w-1280">
+			<div class="breadcrumbs-card">
+				<div class="breadcrumbs-main">
+					<div class="breadcrumbs-inner-text">
+						<ul>
+							<li><a href="#">Lawyer Directory</a></li>
+							<li><img src="img/right-icon.svg" alt=""></li>
+							<li><a href="#">Personal Injury</a></li>
+							<li><img src="img/right-icon.svg" alt=""></li>
+							<li><a href="#">Colorado Attorneys</a></li>
+							<li><img src="img/right-icon.svg" alt=""></li>
+							<li><a href="#">Boulder County</a></li>
+							<li><img src="img/right-icon.svg" alt=""></li>
+							<li><a href="#">Longmont</a></li>
+							<li><img src="img/right-icon.svg" alt=""></li>
+							<li><span>Edward Smith</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="claim-profile">
+					<p>Claim this profile</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Lawyer page banner breadcrumbs html end -->
+
+	<!-- lawyer profile, Overview & Reviews section html start -->
+	<section class="lawyer-profile-wapper">
+		<!-- lawyer profile section html start -->
+		<div class="container w-1280">
+			<div class="lawyer-profile-main">
+				<div class="lawyer-profile-left">
+					<div class="lawyer-profile-list-card premium-card-wapper">
+						<div class="lawyer-profile-list-left">
+							<div class="lawyer-profile-premium-list">
+								<span>PREMIUM</span>
+							</div>
+							<div class="lawyer-profile-list-thumb">
+								<img src="img/l-1.png" alt="">
+							</div>
+							<div class="lawyer-profile-stars">
+								<span class="lawyer-profile-stars-rating" rating="3.5">
+									<span class="star"></span>
+									<span class="star"></span>
+									<span class="star"></span>
+									<span class="star"></span>
+									<span class="star"></span>
+								</span>
+								<p>13 reviews</p>
+							</div>
+						</div>
+						<div class="lawyer-profile-list-right">
+							<div class="lawyer-profile-right-card">
+								<h2>The Law Offices of Gonzalez Associates, LLC</h2>
+								<h3>Personal Injury Lawyers Serving Miami, FL (Fort Lauderdale, FL)</h3>
+								<span class="address-card"><img src="img/location-icon.svg">4100 E. Mississippi Avenue, Floor 19 Denver, CO 80246</span>
+								<ul>
+									<li><img src="img/video-icon-2.svg" alt="">Offers Video Conferencing</li>
+									<li><img src="img/graduation.svg" alt="">University of Denver</li>
+									<li><img src="img/law-icon.svg" alt="">Personal Injury, Insurance Claims, Medical Malpractice and Products Liability</li>
+									<li><img src="img/experience-icon.svg" alt="">Denver, CO Personal Injury Lawyer with 41 years of experience</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lawyer-profile-right">
+					<div class="lawyer-profile-last">
+						<div class="lawyer-profile-last-top">
+							<span><img src="img/location-b.svg" alt=""><a href="#">4100 E. Mississippi Avenue, Floor 19 Denver, CO 80246</a></span>
+							<span><img src="img/phone-icon.svg" alt=""><a href="#">(303) 682-2944</a></span>
+						</div>
+						<div class="lawyer-profile-last-bottom">
+							<a href="#" class="lawyer-profile-website-btn"><img src="img/web-icon.svg" alt=""> View Website </a>
+							<a href="#" class="lawyer-profile-email-btn"><img src="img/email.svg" alt=""> Email Lawyer</a>
+						</div>
+						<ul class="lawyer-profile-social">
+							<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/Twitter.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/LinkedIn.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/Twitter-2.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- lawyer profile section html end -->
+	</section>
+
+	<!-- lawyer Overview & Reviews section html start -->
+	<section class="lawyer-details-wapper">
+		<div class="container w-1280">
+			<div class="lawyer-d-tab-wapper">
+				<div class="lawyer-overview-flex">
+					<div class="lawyer-details-flex overview-width">
+						<div class="lawyer-tab-menu">
+							<ul>
+								<li><a href="javascript:void(0)" class="lawyer-tab-a lawyer-active-a" data-id="overview">Overview</a></li>
+								<li><a href="javascript:void(0)" class="lawyer-tab-a" data-id="reviews">Reviews <span>34</span></a></li>
+							</ul>
+						</div>
+						<div class="lawyer-tab-container">
+							<div class="lawyer-tab lawyer-tab-active" id="overview">
+								<div class="lawyer-overview-details">
+									<div class="lawyer-details-text-card">
+										<div class="lawyer-details-text">
+											<p>Edward has been helping injured victims and their families for over 29 years, and he understands this is an extremely painful and stressful time for you. If you have been injured in an accident or lost a loved one due to someone else's fault, you need an experienced, dedicated attorney to fight for you.Unlike most personal injury law firms where you meet with one attorney only to have your case handed off to another attorney or paralegal, attorney Edward Smith personally handles every case himself, from start to finish <span class="more-text hide">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span><a data-show="more" more-collapse="false" href="javascript:void(0)" class="showmore">Read More »</a></p>
+										</div>
+										<div class="languages-card">
+											<h4>Languages:</h4>
+											<ul>
+												<li><a href="#"><img src="img/US.svg" alt=""></a></li>
+												<li><a href="#"><img src="img/flags-icon.svg" alt=""></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="practice-areas-card pt--48">
+										<div class="lawyer-overview-sub-title">
+											<h3><img src="img/Area-icon.svg" alt=""><span>Practice Areas</span></h3>
+										</div>
+										<div class="lawyer-overview-col">
+											<h4>Injury Law</h4>
+											<p>Brain Injury, Car Accidents, Motorcycle Accidents, Premises Liability, Truck Accidents, Wrongful Death</p>
+										</div>
+										<div class="lawyer-overview-col">
+											<h4>Family Law</h4>
+											<p>Bad Faith Insurance, Motor Vehicle Insurance</p>
+										</div>
+										<div class="lawyer-overview-col">
+											<h4>Bicycle Accidents</h4>
+										</div>
+										<div class="lawyer-overview-col">
+											<h4>Pedestrian Accidents</h4>
+										</div>
+									</div>
+									<div class="fees-card pt--48">
+										<div class="lawyer-overview-sub-title">
+											<h3><img src="img/Fees-icon.svg" alt=""><span>Fees</span></h3>
+										</div>
+										<div class="fees-btn">
+											<a href="#"><img src="img/check-icon.svg" alt="">Free Consultation</a>
+										</div>
+										<div class="lawyer-overview-col">
+											<h4>Contingent Fees</h4>
+											<p>All cases taken on a contingency basis. There is no fee unless you collect money.</p>
+										</div>
+									</div>
+									<div class="professional-experience-card pt--48">
+										<div class="lawyer-overview-sub-title">
+											<h3><img src="img/professional-experience.svg" alt=""><span>Professional Experience</span></h3>
+										</div>
+										<div class="professional-experience-main">
+											<div class="professional-img">
+												<img src="img/image-1.png" alt="">
+											</div>
+											<div class="professional-text">
+												<div class="lawyer-overview-col">
+													<h4>Attorney/Owner</h4>
+													<p>The Law Offices of Edward Smith</p>
+												</div>
+												<div class="fees-btn">
+													<a href="#">1996 - Current</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="education-card pt--48">
+										<div class="lawyer-overview-sub-title">
+											<h3><img src="img/Education-icon.svg" alt=""><span>Education</span></h3>
+										</div>
+										<div class="professional-experience-main">
+											<div class="professional-img">
+												<img src="img/image-1.png" alt="">
+											</div>
+											<div class="professional-text">
+												<div class="lawyer-overview-col">
+													<h4>University of Colorado Law School</h4>
+												</div>
+												<div class="fees-btn">
+													<a href="#">1992</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="awards-card pt--48">
+										<div class="lawyer-overview-sub-title">
+											<h3><img src="img/awards-icon.svg" alt=""><span>Awards</span></h3>
+										</div>
+										<div class="lawyer-overview-col">
+											<h4>Contingent Fees</h4>
+											<p>All cases taken on a contingency basis. There is no fee unless you collect money.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lawyer-tab" id="reviews">
+								<div class="lawyer-write-review">
+									<p>Be the first to share your experience! Your insights could greatly help others in need of legal assistance.</p>
+									<a href="#" data-toggle="modal" data-target="#write-review-modal" >Write review</a>
+								</div>
+								<div class="lawyer-reviews-details">
+									<div class="lawyer-reviews-row">
+										<div class="lawyer-reviews-col">
+											<div class="lawyer-reviews-card">
+												<h3>Auto accident</h3>
+												<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+												<div class="lawyer-reviews-bottom">
+													<h4>Miranda</h4>
+													<span class="lawyer-reviews-stars-rating" rating="3.5">
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="lawyer-reviews-col">
+											<div class="lawyer-reviews-card">
+												<h3>Great lawyer quick and responsive</h3>
+												<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+												<div class="lawyer-reviews-bottom">
+													<h4>Miranda</h4>
+													<span class="lawyer-reviews-stars-rating" rating="5">
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="lawyer-reviews-col">
+											<div class="lawyer-reviews-card">
+												<h3>Great lawyer quick and responsive</h3>
+												<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+												<div class="lawyer-reviews-bottom">
+													<h4>Miranda</h4>
+													<span class="lawyer-reviews-stars-rating" rating="4">
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="lawyer-reviews-col">
+											<div class="lawyer-reviews-card">
+												<h3>Auto accident</h3>
+												<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+												<div class="lawyer-reviews-bottom">
+													<h4>Miranda</h4>
+													<span class="lawyer-reviews-stars-rating" rating="4.5">
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="lawyer-reviews-col">
+											<div class="lawyer-reviews-card">
+												<h3>Auto accident</h3>
+												<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+												<div class="lawyer-reviews-bottom">
+													<h4>Miranda</h4>
+													<span class="lawyer-reviews-stars-rating" rating="3.5">
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="lawyer-reviews-col">
+											<div class="lawyer-reviews-card">
+												<h3>Great lawyer quick and responsive</h3>
+												<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+												<div class="lawyer-reviews-bottom">
+													<h4>Miranda</h4>
+													<span class="lawyer-reviews-stars-rating" rating="5">
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="lawyer-reviews-col">
+											<div class="lawyer-reviews-card">
+												<h3>Great lawyer quick and responsive</h3>
+												<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+												<div class="lawyer-reviews-bottom">
+													<h4>Miranda</h4>
+													<span class="lawyer-reviews-stars-rating" rating="4">
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="lawyer-reviews-col">
+											<div class="lawyer-reviews-card">
+												<h3>Auto accident</h3>
+												<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+												<div class="lawyer-reviews-bottom">
+													<h4>Miranda</h4>
+													<span class="lawyer-reviews-stars-rating" rating="4.5">
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+														<span class="star"></span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lawyer-sln-wapper sln-active">
+						<h3 class="sln-title">Similar lawyers nearby</h3>
+						<div class="sln-card-wapper">
+							<div class="sln-card-box-wapper sln-premium-card">
+								<div class="sln-list-top">
+									<div class="sln-premium-list">
+										<span>PREMIUM</span>
+									</div>
+									<div class="sln-list-thumb">
+										<img src="img/l-1.png" alt="">
+									</div>
+									<div class="sln-content-stars">
+										<span class="sln-content-stars-rating" rating="3.5">
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+										</span>
+										<p>13 reviews</p>
+									</div>
+								</div>
+								<div class="sln-bottom-card">
+									<h2><a href="lawyer-page.html">The Law Offices of Gonzalez Associates, LLC</a></h2>
+									<h3>Personal Injury Lawyers Serving Miami, FL (Fort Lauderdale, FL)</h3>
+									<div class="sln-center-bottom">
+										<span><img src="img/check-icon.svg" alt="">Free Consultation</span>
+										<span><i class="fas fa-phone-alt"></i><a href="#">(303) 682-2944</a></span>
+									</div>
+									<a href="#" class="sln-view-profile">View Profile</a>
+								</div>
+							</div>
+							<div class="sln-card-box-wapper sln-premium-card">
+								<div class="sln-list-top">
+									<div class="sln-premium-list">
+										<span>PREMIUM</span>
+									</div>
+									<div class="sln-list-thumb">
+										<img src="img/l-1.png" alt="">
+									</div>
+									<div class="sln-content-stars">
+										<span class="sln-content-stars-rating" rating="3.5">
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+										</span>
+										<p>13 reviews</p>
+									</div>
+								</div>
+								<div class="sln-bottom-card">
+									<h2><a href="lawyer-page.html">The Law Offices of Gonzalez Associates, LLC</a></h2>
+									<h3>Personal Injury Lawyers Serving Miami, FL (Fort Lauderdale, FL)</h3>
+									<div class="sln-center-bottom">
+										<span><img src="img/check-icon.svg" alt="">Free Consultation</span>
+										<span><i class="fas fa-phone-alt"></i><a href="#">(303) 682-2944</a></span>
+									</div>
+									<a href="#" class="sln-view-profile">View Profile</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- lawyer Overview & Reviews section html end -->
+
+	<!-- Write review modal popup html start -->
+	<div class="modal fade write-review-modal" id="write-review-modal" tabindex="-1" aria-labelledby="write-review-popup" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="lawyer-pofile-modal">
+						<div class="lawyer-pofile-img">
+							<img src="img/l-3.png" alt="">
+						</div>
+						<h2>Write the review about Frank Moya</h2>
+					</div>
+					<form method="" action="" class="write-review-form-main">
+						<div class="form-group">
+							<input type="text" name="" placeholder="Your  Name">
+						</div>
+						<div class="form-group">
+							<input type="text" name="" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<textarea type="text" name="" placeholder="Write review about lawyer"></textarea>
+						</div>
+						<div class="write-review--card">
+							<div class="write-review-title">Write a Review</div>
+							<div class="input-stars big-stars">
+								<div class="rating-stars">
+									<ul id="stars" class="stars-card">
+										<li class="star" data-value="1">
+											<i class="fas fa-star"></i>
+										</li>
+										<li class="star" data-value="2">
+											<i class="fas fa-star"></i>
+										</li>
+										<li class="star" data-value="3">
+											<i class="fas fa-star"></i>
+										</li>
+										<li class="star" data-value="4">
+											<i class="fas fa-star"></i>
+										</li>
+										<li class="star" data-value="5">
+											<i class="fas fa-star"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="submit-btn-w">
+							<button>Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Write review modal popup html end -->
+
+	<!-- lawyer profile, Overview & Reviews section html end -->
+
+	<div class="lawyer-profile-bottom">
+		<div class="lawyer-profile-bottom-v">
+			<span>View contacts</span><img src="img/down-arrow.svg" alt="">
+		</div>
+		<div class="lawyer-profile-right">
+			<div class="lawyer-profile-last">
+				<div class="lawyer-profile-last-top">
+					<span><img src="img/location-b.svg" alt=""><a href="#">4100 E. Mississippi Avenue, Floor 19 Denver, CO 80246</a></span>
+					<span><img src="img/phone-icon.svg" alt=""><a href="#">(303) 682-2944</a></span>
+				</div>
+				<div class="lawyer-profile-last-bottom">
+					<a href="#" class="lawyer-profile-website-btn"><img src="img/web-icon.svg" alt=""> View Website </a>
+					<a href="#" class="lawyer-profile-email-btn"><img src="img/email.svg" alt=""> Email Lawyer</a>
+				</div>
+				<ul class="lawyer-profile-social">
+					<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/Twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/LinkedIn.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/Twitter-2.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer section start -->
+	<div class="fooetr-section">
+		<div class="footer-top">
+			<div class="container w-1280">
+				<div class="footer-top-all-wapper">
+					<div class="footer-logo-wapper">
+						<div class="footer-logo">
+							<img src="img/header-footer-img/Logo.svg" alt="">
+						</div>
+						<div class="footer-sign-up-btn">
+							<a href="register-page.html" class="modal-form-a">Sign-Up</a>
+						</div>
+						<div class="social-icon">
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Directory-Resources-wapper">
+						<div class="Directory-wapper">
+							<h5>Directory</h5>
+							<ul>
+								<li><a href="pratice-area-page.html">By Practice Area</a></li>
+								<li><a href="state-page.html">By State</a></li>
+							</ul>
+						</div>
+						<div class="Resources-wapper">
+							<h5>Popular Locations</h5>
+							<ul>
+								<li><a href="#">Pennsylvania</a></li>
+								<li><a href="#">Massachusetts</a></li>
+								<li><a href="#">Virginia</a></li>
+								<li><a href="#">Florida</a></li>
+								<li><a href="#">California</a></li>
+								<li><a href="#">Colorado</a></li>
+							</ul>
+						</div>
+						<div class="Resources-wapper">
+							<h5>Popular Practice Areas</h5>
+							<ul>
+								<li><a href="#">Criminal defense</a></li>
+								<li><a href="#">Employment and labor</a></li>
+								<li><a href="#">Estate planning</a></li>
+								<li><a href="#">Family</a></li>
+								<li><a href="#">Personal injury</a></li>
+								<li><a href="#">Real estate</a></li>
+							</ul>
+						</div>
+						<div class="Legal-wapper">
+							<h5>Legal</h5>
+							<ul>
+								<li><a href="about-us-page.html">About Us</a></li>
+								<li><a href="contact-page.html">Contact Us</a></li>
+								<li><a href="#">Privacy Statement</a></li>
+								<li><a href="#">Terms of Use</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-sign-up-btn">
+						<a href="register-page.html" class="modal-form-a">Sign-Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container w-1280">
+				<div class="social-icon">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+				<p>© 1995-2023 Legal.com</p>
+			</div>
+		</div>
+	</div>
+	<!-- footer section end -->
+
+	<!-- login form modal popup html start -->
+	<div class="modal fade login-form-modal-wapper modal-show-wapper" id="login-form-modal" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="login-form-modal">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<img src="img/close-icon.svg" alt="">
+						</button>
+						<h2>Login to your account</h2>
+					</div>
+					<form method="" action="lawyers-profile-management-pages.html" class="login-form-main">
+						<div class="form-group">
+							<input type="text" name="" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="text" name="" placeholder="Password">
+							<span class="login-addon2"><img src="img/password-view-eye.svg" alt=""></span>
+						</div>
+						<div class="login-btn-w">
+							<button>Submit</button>
+						</div>
+					</form>
+					<p>Don’t have an account? <a href="register-page.html" class="modal-form-a">Sing up</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- login form modal popup html end -->	
+
+	<!-- Sing up modal popup html start -->
+	<div class="modal fade sing-up-form-modal-wapper modal-show-wapper" id="sing-up-form-modal" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="sing-up-form-modal">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<img src="img/close-icon.svg" alt="">
+						</button>
+						<h2>Register</h2>
+					</div>
+					<form method="" action="" class="sing-up-form-main">
+						<div class="form-group">
+							<input type="text" name="" placeholder="Your  Name">
+						</div>
+						<div class="form-group">
+							<input type="text" name="" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="text" name="" placeholder="Password">
+							<span class="login-addon2"><img src="img/password-view-eye.svg" alt=""></span>
+						</div>
+						<div class="sing-up-btn-w">
+							<button>Create an account</button>
+						</div>
+					</form>
+					<p>or</p>
+					<div class="sing-up-with-btn">
+						<a href="#"><img src="img/sign-up-google-icon.svg" alt="">Sign Up with the Google</a>
+						<a href="#"><img src="img/sign-up-facebook.svg" alt="">Sign Up with the Facebook</a>
+						<a href="#"><img src="img/sign-up-linkedIn.svg" alt="">Sign Up with the Linkedin</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Sing up modal popup html end -->
+
+</body>
+</html>

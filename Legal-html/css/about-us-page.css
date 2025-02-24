@@ -1,0 +1,474 @@
+body {
+	margin: 0;
+	background: var(--main_bg);
+	padding: 0;
+}
+:root {
+	--Blacker_Text:'Plus Jakarta Sans', sans-serif; 
+	--Manrope:'Plus Jakarta Sans', sans-serif;
+
+	--main_bg:#DCE4ED;
+	--main_bg_1:#D4AF37;
+	--main_bg_2:#FFF;
+	--main_bg_3:#2B4C65;
+	--main_bg_4:#375B77;
+	--main_bg_5:#1B3344;
+	--main_bg_6:#FBFBFB;
+	--main_bg_7: #CDD6E0;
+
+	--main_title_1:#3E6E7F;
+	--main_title_2:#2B4C65;
+	--main_title_3:#fff;
+	--main_text_1:#555966;
+	--main_text_2:#FFF;
+	--main_text_3:#AEB6BF;
+	--main_text_4:#A1B6C6;
+	--main_text_5:#DCF0FF;
+	--main_text_6:#D4AF37;
+
+	--btn_color_1:#D4AF37;
+	--border_color:#D4AF37;
+	--border_color_1:#2B4C65;
+	--border_color_2:#DCE4ED;
+	--border_color_3:#555966;
+	--border_color_4:#fff;
+	--border_color_5:#396383;
+}
+
+/* about banner section css start */
+.about-banner-main-wapper{ overflow:hidden; position:relative; background-color:var(--main_bg_2); }
+.about-banner-wapper{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 536px;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: cover !important;
+	padding-top: 86px;
+}
+.about-text-wapper { max-width: 700px; width: 100%; margin: auto; }
+.about-text-wapper h1 {
+	margin: 0;
+	color: var(--main_title_3);
+	font-family:var(--Manrope);
+	font-size: 56px;
+	font-style: normal;
+	text-align: center;
+	font-weight: 700;
+	line-height: 62px;
+	letter-spacing: -1.68px;
+	text-transform: capitalize;
+	padding-bottom: 32px;
+}
+.about-text-wapper p {
+	color: var(--main_title_3);
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+}
+.about-text-wapper p:last-child{ margin-bottom:0; }
+/* about banner section css end */
+
+/* about section b css start */
+.about-section-b-wapper { 
+	background:var(--main_bg);
+	padding: 183px 0 80px 0;
+	position: relative;
+	z-index: 1;
+}
+.about-section-b-wapper:before{
+	content: '';
+	background: var(--main_bg_1);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: -19px;
+	position: absolute;
+	left: -140px;
+	z-index: -2;
+	height: 100%;
+}
+.about-section-b-wapper::after {
+	content: '';
+	position: absolute;
+	right: -156px;
+	top: 16px;
+	background: var(--main_bg_2);
+	width: 125%;
+	height: 120%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.about-us-card {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	gap: 24px;
+}
+.about-us-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--border_color);
+	background-color: var(--main_bg_3);
+	border-radius: 100%;
+	width: 88px;
+	height: 88px;
+}
+.about-us-img img {
+	width: 32px;
+	height: 32px
+}
+.about-us-text { display:flex; flex-direction:column; gap:12px; }
+.about-us-text h3 {
+	margin: 0;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: -0.2px;
+}
+.about-us-text p {
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: -0.18px;
+	margin: 0;
+}
+
+/* about review css start */
+.about-review-wapper { padding: 120px 0 0; position: relative; }
+.about-review-title { padding-bottom:48px; }
+.about-review-title h2 {
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+	line-height: 54px;
+	letter-spacing: -1.44px;
+	text-transform: capitalize;
+	margin: 0;
+}
+.about-review-card p {
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+.about-review-card p:last-child { margin:0; }
+.about-reviews-bottom { display:flex; align-items:center; gap:16px; padding-top:14px; }
+.about-reviews-bottom h4 {
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+	margin: 0;
+}
+.about-reviews-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:16px; }
+.about-reviews-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.about-reviews-stars-rating span.star:hover { cursor:pointer; }
+.about-reviews-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:var(--main_title_2); }
+.about-reviews-stars-rating span.star.filled:before { font-weight: 900; color:var(--main_title_2); content:"\f005"; }
+.about-reviews-stars-rating span.star.half-filled:before { content:"\f089"; color:var(--main_title_2); }
+.about-reviews-stars-rating span.star.half-filled:after { content:"\f005"; color:var(--main_title_2); margin-left:-20px; }
+/* about review css end */
+
+/* about section b css end */
+
+/* faq section html start */
+.learn-about-text h2 {
+	margin: 0;
+	color: var(--main_title_3);
+	font-family: var(--Blacker_Text);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -0.48px;
+	padding-bottom: 40px;
+}
+.learn-about-text p {
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px;
+}
+.learn-about-text p:last-child{ margin-bottom:0; }
+.review-faq-wapper { padding: 40px 0 0;	 position: relative; }
+.review-faq-wapper { max-width:795px; width:100%; }
+.faq-accordion-item { margin-bottom: 10px; }
+.faq-accordion-wapper a {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	letter-spacing: -0.54px;
+}
+.faq-accordion-wapper a { width: 95% !important; }
+.faq-accordion-wapper .faq-content {
+	display: none; 
+	overflow: hidden; 
+	padding: 0 24px 24px;
+}
+.faq-accordion-wapper .faq-content p { 
+	color: var(--main_text_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 24px;
+	letter-spacing: -0.48px;
+}
+.faq-accordion-wapper .faq-content p:last-child { margin-bottom:0; }
+.faq-accordion-item .faq-menu:after {
+	font-family: 'Font Awesome\ 5 Free';
+	content: '\f067';
+	position: absolute;
+	right: 23px;
+	top: 24px;
+	font-size: 18px;
+	color:var(--main_title_3);
+	text-align: center;
+	font-weight: 900;
+}
+.faq-accordion-item.active .faq-menu::after {
+	top: 25px; 
+	content: '\f068';
+	color: var(--main_title_3); 
+}
+.faq-accordion-item{ 
+	margin-bottom: 0; 
+	border-top: 1px solid var(--border_color_4);
+}
+.faq-accordion-item:last-child{ border-bottom: 1px solid var(--border_color_4); }
+.faq-accordion-item .faq-menu{
+	border-radius: 4px;
+	padding:24px;
+	position: relative;
+}
+.faq-accordion-item.active .faq-menu{ 
+	color: var(--main_title_3); 
+}
+.faq-accordion-item.active .faq-menu a{ 
+	color:var(--main_title_3); 
+}
+/* faq section html end */
+
+/* Legal Guides section start */
+.lelgal-guides-section{
+	background:var(--main_bg_2) ;
+	padding: 300px 0 80px 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.lelgal-guides-section::before {
+	content: '';
+	background: var(--main_bg_1);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 128px;
+	position: absolute;
+	left: -150px;
+	z-index: -2;
+	height: 100%;
+}
+.lelgal-guides-section::after {
+	content: '';
+	position: absolute;
+	right: -186px;
+	top: 160px;
+	background: var(--main_bg_3);
+	width: 134%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.lelgal-guides-section h2{
+	margin: 0;
+	color: var(--main_title_3);
+	font-family: var(--Blacker_Text);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -0.48px;
+}
+.lelgal-guides-section h2 span{
+	position: relative;
+	z-index: 1;
+}
+.lelgal-guides-section .Legal-Guides-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.injured-law-wapper{
+	display: flex;
+	align-items: center;
+	column-gap: 32px;
+	row-gap: 24px;
+	flex-flow: row wrap;
+}
+.Injury-Law-card-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.Injury-Law-card-wapper h6 { margin: 0; line-height: normal; }
+.Injury-Law-card-wapper h6 a{
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+}
+.Injury-Law-card-wapper p{
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+}
+.lelgal-guides-section .container{ display: flex; flex-direction: column; gap: 120px; }
+.read-more-btn{ display: none; }
+/* Legal Guides section end */
+
+
+@media(max-width:1399px){
+
+	/* about section b css start */
+	.about-section-b-wapper::before { left: -160px }
+	.about-section-b-wapper::after { right: -160px; width: 121%; }
+	/* about section b css end */
+
+	/* Legal Guides section start */
+	.lelgal-guides-section::before { left: -200px; }
+	.lelgal-guides-section::after { right: -170px; width: 140%; }
+	/* Legal Guides section end */
+
+}
+@media(max-width:1199px){
+
+	/* about section b css start */
+	.about-section-b-wapper { padding:140px 0 80px 0 }
+	.about-section-b-wapper::before { width: 100%; top: -20px;  left: -145px;}
+	.about-section-b-wapper::after { right: -190px; width: 172%; top: 30px; }
+	/* about section b css end */
+
+	/* Legal Guides section start */
+	.lelgal-guides-section { padding:200px 0 80px 0; }
+	.lelgal-guides-section::after {
+		right: -220px;
+		width: 142%;
+		top: 80px;
+	}
+	.lelgal-guides-section::before { width: 100%; top: 50px; left: -160px; }
+	/* Legal Guides section end */
+
+}
+
+@media(max-width:991px){
+
+	/* about section b css start */
+	.about-section-b-wapper { padding: 100px 0 80px 0; }
+	.about-section-b-wapper::after { right: -259px; width: 190%; top: 10px; }
+	.about-section-b-wapper::before { width: 100%; top: -40px; left: -365px; }
+	/* about section b css end */
+
+	/* Legal Guides section start */
+	.d-n{display: none;}
+	.read-more-btn{
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.read-more-btn a{
+		color: var(--main_title_2);
+		font-family: var(--Manrope);
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		padding: 16px 90px;
+		border-radius: 4px;
+		border: 1px solid var(--main_bg_2);
+		background: var(--main_bg_2);
+	}
+	.Injury-Law-card-wapper { display: none; }
+	.lelgal-guides-section { padding: 200px 0 80px 0; }
+	.lelgal-guides-section .container { gap: 40px; }
+	.lelgal-guides-section h2 { font-size: 46px; }
+	.lelgal-guides-section::after { right: -235px; width: 158%; }
+	/* Legal Guides section end */
+
+}
+@media(max-width:767px){
+
+	/* abour banner serction css start */
+	.about-banner-wapper { height:600px; }
+	.about-text-wapper h1 { font-size:36px; line-height:42px; }
+	.about-text-wapper p { font-size:16px; line-height:24px; }
+	/* abour banner serction css end */
+
+	/* about section b css start */
+	.about-section-b-wapper { padding: 100px 0 80px 0; }
+	.about-section-b-wapper::before { width: 100%; top: -28px; left: -311px; }
+	.about-section-b-wapper::after { right: -600px; width: 403%; top: 0; }
+
+	.about-review-title h2 { font-size:30px; line-height:38px; }
+	.about-review-wapper { padding-top:60px; }
+	/* about section b css end */
+
+	/* Legal Guides section start */
+	.lelgal-guides-section { padding: 160px 0 50px 0; }
+	.lelgal-guides-section .container { gap: 50px; }
+	.lelgal-guides-section .Legal-Guides-wapper { gap: 24px; }
+	.lelgal-guides-section::before { top: 42px; left: -231px;}
+	.lelgal-guides-section::after { right: -346px; width:280%; top:65px;}
+	.lelgal-guides-section h2 span::after { height: 15px;}
+	.m-d-n { display: none; }
+	.lelgal-guides-section h2 { font-size: 36px; letter-spacing: -0.36px; }
+	/* Legal Guides section end */
+
+	/* faq section css start */
+	.learn-about-text h2 {font-size: 36px; }
+	.learn-about-wapper { padding-top:0; }
+	.learn-about-text p { font-size:16px;line-height:24px; }
+	/* faq section css end */
+
+}
+@media(min-width:1700px){
+	.lawyers-list-wapper::after { right:-192px; }
+}

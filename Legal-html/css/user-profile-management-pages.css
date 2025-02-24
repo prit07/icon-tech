@@ -1,0 +1,174 @@
+body {
+	margin: 0;
+	background: var(--main_bg);
+	padding: 0;
+}
+:root {
+	--Blacker_Text:'Plus Jakarta Sans', sans-serif; 
+	--Manrope:'Plus Jakarta Sans', sans-serif;
+
+	--main_bg:#DCE4ED;
+	--main_bg_1:#D4AF37;
+	--main_bg_2:#FFF;
+	--main_bg_3:#2B4C65;
+	--main_bg_4:#375B77;
+	--main_bg_5:#1B3344;
+	--main_bg_6:#FBFBFB;
+	--main_bg_7: #CDD6E0;
+
+	--main_title_1:#3E6E7F;
+	--main_title_2:#2B4C65;
+	--main_title_3:#fff;
+	--main_text_1:#555966;
+	--main_text_2:#FFF;
+	--main_text_3:#AEB6BF;
+	--main_text_4:#A1B6C6;
+	--main_text_5:#DCF0FF;
+	--main_text_6:#D4AF37;
+
+	--btn_color_1:#D4AF37;
+	--border_color:#D4AF37;
+	--border_color_1:#2B4C65;
+	--border_color_2:#DCE4ED;
+	--border_color_3:#555966;
+	--border_color_4:#fff;
+	--border_color_5:#396383;
+}
+
+/* title & tab section css start */
+.lpm-banner-section-wapper { position: relative; padding: 72px 0 120px; }
+.lpm--title h1 {
+	margin: 0;
+	color: var(--main_title_1);
+	font-family: var(--Blacker_Text);
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 62px;
+	letter-spacing: -1.68px;
+	text-transform: capitalize;
+	position: relative;
+	padding-bottom: 40px;
+}
+.lpm--title h1 span {
+	color: var(--main_title_2);
+}
+/* title & tab section css end */
+
+/* upload image css start */
+.lpm-bottom-wapper { display:flex; justify-content:space-between; align-items:center; flex-flow:row wrap; }
+.lpm-user-image-upload { display:flex; align-items:center; gap:21px; }
+.lpm-user-img img {
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+}
+.lpm-user-img {
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.upload-img-btn input {        
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.upload-img-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	padding: 0 24px;
+	border-radius: 4px;
+	border: 1px solid var(--border_color_1);
+	gap: 12px;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	background: var(--main_bg);
+	position: relative;
+}
+/* upload image css end */
+
+/* Personal Profile css start */
+.lpm-b-form-card { padding-top:30px; }
+.lpm-form-wapper form { display: flex; flex-direction: column; gap: 32px; }
+.lpm-b-form-card .form-group { 
+	margin:0; 
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	column-gap: 12px;
+	row-gap: 16px;
+}
+.lpm-b-form-card .form-group .form-col-3 { 
+	-ms-flex: 0 0 24%;
+	flex: 0 0 24%;
+	max-width: 24%;
+	position: relative;
+} 
+.lpm-form-title { display: flex; flex-direction: column; gap: 12px; }
+.lpm-b-form-card { display:flex; flex-direction:column; gap:20px; }
+.lpm-b-form-card .form-group .form-control {
+	border-radius: 4px;
+	background: var(--main_bg_2);
+	padding: 0 16px;
+	height: 48px;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	position: relative;
+	border: 0;
+}
+.lpm-b-form-card .form-group .form-control::placeholder {
+	color: var(--main_title_2);
+	opacity: 1;
+}
+.lpm-b-btn {
+	border: 0;
+	border-radius: 4px;
+	background: var(--main_bg_3);
+	height: 48px;
+	max-width: 281px;
+	width: 100%;
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+/* Personal Profile css end */
+
+@media(min-width:1200px){
+	.lpm-banner-section-wapper .lpm-banner-card-wapper, .lpm-banner-section-wapper .lpm-banner-main-wapper { max-width:1172px !important; }
+}
+
+@media(max-width:991px){
+	/* Personal Profile css start */
+	.lpm-b-form-card .form-group .form-col-3 { -ms-flex: 0 0 32%; flex: 0 0 32%; max-width: 32%; position: relative; }
+	/* Personal Profile css end */
+}
+
+@media(max-width:767px){
+	/* title & tab section css start */
+	.lpm--title h1 { font-size:36px; line-height:42px; }
+	/* title & tab section css end */
+
+	/* Personal Profile css start */
+	.lpm-b-form-card .form-group .form-col-3 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+	.lpm-b-btn  { max-width:100%; }
+	/* Personal Profile css end */
+}

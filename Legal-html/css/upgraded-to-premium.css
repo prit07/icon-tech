@@ -1,0 +1,304 @@
+body {
+	margin: 0;
+	background: var(--main_bg);
+	padding: 0;
+}
+:root {
+	--Blacker_Text:'Plus Jakarta Sans', sans-serif; 
+	--Manrope:'Plus Jakarta Sans', sans-serif;
+
+	--main_bg:#DCE4ED;
+	--main_bg_1:#D4AF37;
+	--main_bg_2:#FFF;
+	--main_bg_3:#2B4C65;
+	--main_bg_4:#375B77;
+	--main_bg_5:#1B3344;
+	--main_bg_6:#FBFBFB;
+	--main_bg_7: #CDD6E0;
+
+	--main_title_1:#3E6E7F;
+	--main_title_2:#2B4C65;
+	--main_title_3:#fff;
+	--main_text_1:#555966;
+	--main_text_2:#FFF;
+	--main_text_3:#AEB6BF;
+	--main_text_4:#A1B6C6;
+	--main_text_5:#DCF0FF;
+	--main_text_6:#D4AF37;
+
+	--btn_color_1:#D4AF37;
+	--border_color:#D4AF37;
+	--border_color_1:#2B4C65;
+	--border_color_2:#DCE4ED;
+	--border_color_3:#555966;
+	--border_color_4:#fff;
+	--border_color_5:#396383;
+}
+
+/* Premium Placements section css start */
+.cp-section-wapper {
+	position: relative;
+	padding: 80px 0 30px;
+}
+.p-placements-wapper { display: flex; flex-direction: row; gap: 32px; position: relative; }
+
+/* left side css start */
+.p-placements-left { max-width:620px; width:100%; }
+.p-placements-left-card {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.p-placements-left-card h2 {
+	margin: 0;
+	color: var(--main_title_2);
+	font-family:var(--Manrope);
+	font-size: 54px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 62px;
+	letter-spacing: -1.62px;
+	text-transform: capitalize;
+}
+.p-placements-left-card p {
+	margin: 0;
+	color: var(--main_text_1);
+	font-family:var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+}
+.p-placements-left-card ul { margin:0; padding:0; display:flex; flex-direction:column; gap:16px; }
+.p-placements-left-card ul li {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: var(--main_text_1);
+	font-family:var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px; /* 144.444% */
+}
+.p-placements-left-card ul li img {
+	width: 20px;
+	height: 20px;
+}
+.get-premiun-now-btn {
+	display: block;
+	border-radius: 4px;
+	background: var(--main_bg_1);
+	max-width: 281px;
+	width: 100%;
+	height: 48px;
+	text-align: center;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 48px;
+}
+.get-premiun-now-btn:hover { color: var(--main_title_2); }
+/* left side css end */
+
+/* right side css start */
+.p-placements-right { max-width:658px; width:100%; }
+
+/* right side css end */
+/* Premium Placements section css end */
+
+/* Why do you need it css start */
+.wdy-wapper {
+	background: var(--main_bg);
+	padding: 280px 0 110px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.wdy-wapper:before {
+	content: '';
+	background: var(--main_bg_1);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 120px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.wdy-wapper::after {
+	content: '';
+	position: absolute;
+	right: -126px;
+	top: 138px;
+	background: var(--main_bg_2);
+	width: 124%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.wdy-card {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	gap: 24px;
+}
+.wdy-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--border_color);
+	background-color: var(--main_bg_2);
+	border-radius: 100%;
+	max-width: 88px;
+	width: 100%;
+	height: 88px;
+	margin: 0;
+}
+.wdy-icon img {
+	width: 32px;
+	height: 32px
+}
+.wdy-text { display:flex; flex-direction:column; gap:12px; }
+.wdy-text h3 {
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: -0.2px;
+	margin: 0;
+}
+.wdy-text p {
+	margin: 0;
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: -0.18px;
+}
+.wdy-text-wappre { padding-bottom:26px; }
+.wdy-text-wappre h2 {
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 54px;
+	letter-spacing: -1.44px;
+	text-transform: capitalize;
+	margin: 0;
+	padding-bottom: 26px;
+}
+.wdy-text-wappre p {
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+	margin: 0;
+}
+.why-review-wapper { padding: 120px 0 48px; position: relative; }
+.why-review-wapper .row { row-gap:48px; }
+.why-review-title { padding-bottom:48px; }
+.why-review-title h2 {
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 54px;
+	letter-spacing: -1.44px;
+	text-transform: capitalize;
+	margin: 0;
+}
+.why-review-card p {
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0;
+}
+.why-review-card p:last-child { margin:0; }
+.why-reviews-bottom { display:flex; align-items:center; gap:16px; padding-top:14px; }
+.why-reviews-bottom h4 {
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+	margin: 0;
+}
+.why-reviews-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:16px; }
+.why-reviews-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.why-reviews-stars-rating span.star:hover { cursor:pointer; }
+.why-reviews-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:var(--main_title_2); }
+.why-reviews-stars-rating span.star.filled:before { font-weight: 900; color:var(--main_title_2); content:"\f005"; }
+.why-reviews-stars-rating span.star.half-filled:before { content:"\f089"; color:var(--main_title_2); }
+.why-reviews-stars-rating span.star.half-filled:after { content:"\f005"; color:var(--main_title_2); margin-left:-20px; }
+/* Why do you need it css end */
+
+@media (max-width:1400px) {
+	/* Why do you need it css start */
+	.wdy-wapper::after { right: -123px; width: 120%; }
+	/* Why do you need it css End */
+}
+
+@media(max-width:1199px) {
+	/* Why do you need it css start */
+	.wdy-wapper:before { left: -150px; }
+	.wdy-wapper::after { content: ''; width: 162%; right: -160px; }
+	/* Why do you need it css End */
+}
+
+@media(max-width:991px) {
+	/* Premium Placements section css start */
+	.cp-title h1 { font-size:40px;line-height:60px; }
+	.cp-claim-card { flex-direction:column; }
+
+	/* left side css start */
+	.p-placements-wapper { flex-direction:column; }
+	.p-placements-left { max-width:100%; width:100%; }
+	/* left side css end */
+	/* right side css start */
+	.p-placements-right { max-width:100%; width:100%; }
+	/* right side css end */
+	/* Premium Placements section css end */
+
+	/* Why do you need it css start */
+	.wdy-wapper:before { top: 78px; left: -114px; }
+	.wdy-wapper::after { width: 200%; right: -170px; z-index: -1; }
+	.patience-areas-title { padding:80px 0 0; }
+	.wdy-wapper { padding: 200px 0 80px; }
+	/* Why do you need it css End */
+}
+
+@media(max-width:767px) {
+	/* Premium Placements section css start */ 
+	.cp-claim-card form { flex-direction:column; }
+	.claim-by-btn { max-width:100%; }
+	.p-placements-left-card h2 { font-size:36px; line-height:42px; }
+	/* Premium Placements section css end */ 
+
+	/* Why do you need it css start */
+	.wdy-wapper { padding:200px 0 60px; }
+	.wdy-wapper::after { width: 248%; right: -254px; z-index: -1; }
+	.wdy-wapper:before { top: 108px; left: -193px; }
+	.why-review-wapper { padding:80px 0 48px }
+	.wdy-text-wappre h2, .why-review-title h2 { font-size:34px; line-height:44px; }
+	/* Why do you need it css end */
+}
+
+@media(min-width:1700px){
+	.wdy-wapper::after { right: -302px; width: 130%; }
+}

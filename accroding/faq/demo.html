@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        /* Reset default margins */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style FAQ container */
+        .faq-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Style FAQ items */
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Style question */
+        .question {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .answer {
+            padding: 10px;
+            display: none;
+        }
+
+        .question.active+.answer {
+            display: block;
+        }
+
+        .arrow {
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        .question.active .arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question active">Question 1<span class="arrow"><i class="fas fa-chevron-up"></i></span></div>
+            <div class="answer">Answer to question 1</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">Question 2<span class="arrow"><i class="fas fa-chevron-up"></i></span></div>
+            <div class="answer">Answer to question 2</div>
+        </div>
+        <!-- Add more FAQ items here -->
+    </div>
+</body>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(function (question) {
+            question.addEventListener('click', function () {
+                const answer = this.nextElementSibling;
+                const arrow = this.querySelector('.arrow');
+
+                questions.forEach(function (otherQuestion) {
+                    if (otherQuestion !== question) {
+                        otherQuestion.classList.remove('active');
+                        otherQuestion.nextElementSibling.style.display = 'none';
+                        otherQuestion.querySelector('.arrow').style.transform = 'rotate(0deg)';
+                    }
+                });
+                this.classList.toggle('active');
+                
+                // Toggle display of answer
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    arrow.style.transform = 'rotate(0deg)';
+                } else {
+                    answer.style.display = 'block';
+                    arrow.style.transform = 'rotate(190deg)';
+                }
+            });
+        });
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,247 @@
+body { margin:0; padding:0; position: relative; }
+a:hover { text-decoration:none; }
+.mb--40 { margin-bottom:40px; }
+.blog-details-wapper .container-fluid.width-1800 { max-width:1800px; padding:0 20px; }
+.blog-details-wapper .container.w-1400 { max-width:1400px; padding:0 20px; }
+
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+}
+.h-thank-you-wapper{ background-color:#fff; }
+.blog-details-bottom-text { padding-top: 90px; }
+.h-thank-you-wapper p{
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 40px;
+	color: #000000;
+	margin: 0;
+}
+.h-thank-you-wapper h2{
+	margin: 0;
+	font-family: 'Mabry Pro';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 85px;
+	text-align: center;
+	color: #CC3A00;
+	display: flex;
+	align-items: center;
+}
+.h-thank-you-wapper h2 img { max-width:80px; height:80px; margin-left:20px; }
+.h-thank-you-wapper h3{
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 40px;
+	color: #000000;
+	margin: 0;
+}
+.h-thank-you-wapper h5{
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	color: #000000;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.main-text{
+	text-align: center;
+	padding: 30px 0;
+}
+.order-number-and-date{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.order-number-card{
+	display: flex;
+}
+.order-number-card-icon{
+	color: #CC3A00;
+	font-size: 52px;
+	margin-right: 20px;
+}
+.order-number-card-inner span{
+	font-size: 23px;
+}
+.order-number-print-btn a{
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 40px;
+	color: #000000;
+	margin: 0;
+}
+.order-number-wapper{
+	border: 2px dashed #0C141D;
+	padding: 50px 20px;
+	border-radius: 0px;
+	position: relative;
+}
+.order-number-wapper:before{
+	content: '';
+	background-image: url('../img/h2_about_shape03.png');
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 426px;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.payment-status-confirmation-wapper{
+	border: 2px dashed #a4a3a3;
+	margin: 30px 0;
+	border-radius: 0px;
+	background-image: url(../img/bg-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.payment-status-wapper{
+	border-bottom: 2px dashed #a4a3a3;
+	padding: 50px 20px;
+}
+.payment-confirmation-wapper{
+	padding: 50px 20px;
+}
+.order-shipped-address-wapper{
+	border: 2px dashed #0C141D;
+	padding: 50px 20px;
+	border-radius: 0;
+	position: relative;
+}
+.order-shipped-a { position:relative; }
+.order-shipped-address-wapper:before{
+	content: '';
+	background-image: url('../img/blog-bg-1-1.jpg');
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.order-shipped-address-wapper h3{
+	padding-bottom: 15px;
+}
+.order-shipped-address-wapper p{
+	padding-bottom: 10px;
+}
+.order-shipped-address-wapper iframe{
+	margin-bottom: 30px;
+}
+.your-order-wapper{
+	border: 2px dashed #a4a3a3;
+	padding: 50px 20px;
+	margin: 30px 0;
+	border-radius: 0px;
+	background-image: url(../img/bg-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.your-order-wapper h5{
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	color: #000000;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.order-dt-card-img{
+	width: 100px;
+	height: 150px;
+	margin-right: 30px;
+}
+.order-dt-card-img img{
+	width: 100%;
+	height: 100%;
+}
+.order-dt-card-wapper{
+	display: flex;
+	align-items: center;
+	padding-bottom: 20px;
+}
+.order-dt-card-wapper-bottom{
+	padding-top: 20px;
+	border-top: 1px dashed #a4a3a3;
+}
+.order-dt-card-inner h4{
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	color: #000000d1;
+	margin: 0;
+}
+
+
+@media(max-width:1199px){
+	.h-thank-you-wapper h2 {
+		font-size: 68px;
+		line-height: 78px;
+		text-align: center;
+	}
+}
+@media(max-width:991px){
+	.order-number-card-inner p{
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.order-number-print-btn a {
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.h-thank-you-wapper h2 {
+		font-size: 50px;
+		line-height: 60px;
+		text-align: center;
+	}
+}
+@media(max-width:767px){
+	.h-thank-you-wapper h2 {
+		font-size: 45px;
+		line-height: 56px;
+		text-align: center;
+	}
+	.h-thank-you-wapper p {
+		font-size: 21px;
+		line-height: 30px;
+	}
+	.order-number-and-date {
+		display: block;
+	}
+	.order-number-card {
+		justify-content: center;
+	}
+	.order-number-print-btn a {
+		display: flex;
+		justify-content: center;
+	}
+	.h-thank-you-wapper h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.order-dt-card-wapper {
+		display: block;
+	}
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .custom-select {
+            position: relative;
+            font-family: Arial;
+        }
+        .custom-select select {
+            display: none;
+        }
+        .select-selected {
+            background-color: DodgerBlue;
+            padding: 8px 16px;
+            color: #ffffff;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid #000;
+            border-radius: 4px;
+            position: relative;
+        }
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #fff transparent transparent transparent;
+        }
+        .select-selected.select-arrow-active:after {
+            border-color: transparent transparent #fff transparent;
+            top: 7px;
+        }
+        .select-items {
+            position: absolute;
+            background-color: DodgerBlue;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            border-top: none;
+            display: none;
+        }
+        .select-items div {
+            padding: 8px 16px;
+            color: #ffffff;
+            cursor: pointer;
+            user-select: none;
+        }
+        .select-items div:hover,
+        .same-as-selected {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .select-show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-select" style="width:200px;">
+        <select>
+            <option value="" disabled selected>Select size</option>
+            <option >W: 1045 | D: 460 | H: 1485</option>
+            <option >W: 745 | D: 360 | H: 2485</option>
+            <option >W: 545 | D: 260 | H: 185</option>
+            <option >W: 245 | D: 560 | H: 285</option>
+        </select> 
+    </div>
+
+    <div id="additional-div"></div>
+
+    <script>
+        $(document).ready(function () {
+            // Function to initialize custom select dropdowns
+            function initializeSelect($selectContainer) {
+                var $select = $selectContainer.find("select"),
+                    $selected = $("<div></div>").addClass("select-selected").html($select.find("option:selected").html()),
+                    $items = $("<div></div>").addClass("select-items");
+
+                $select.find("option").each(function (i) {
+                    if (i > 0) { // Skip the placeholder option
+                        $("<div></div>").html($(this).html()).on("click", function () {
+                            var $clicked = $(this),
+                                index = $clicked.index();
+                            $select.prop("selectedIndex", index + 1);
+                            $selected.html($clicked.html());
+                            $clicked.addClass("same-as-selected").siblings().removeClass("same-as-selected");
+                            $items.removeClass("select-show");
+                            $selected.removeClass("select-arrow-active");
+
+                            // Dynamically add another custom select in #additional-div
+                            var $dynamicDiv = $("<div></div>").addClass("custom-select").css("width", "200px");
+                            $dynamicDiv.append($select.clone(true));
+                            $("#additional-div").append($dynamicDiv);
+                            initializeSelect($dynamicDiv); // Initialize the new select
+                        }).appendTo($items);
+                    }
+                });
+
+                $selectContainer.append($selected).append($items);
+                $selected.on("click", function (e) {
+                    e.stopPropagation();
+                    $(".select-items").not($items).removeClass("select-show");
+                    $(".select-selected").not($selected).removeClass("select-arrow-active");
+                    $items.toggleClass("select-show");
+                    $selected.toggleClass("select-arrow-active");
+                });
+            }
+
+            // Initialize the first custom select
+            $(".custom-select").each(function () {
+                initializeSelect($(this));
+            });
+
+            // Close all dropdowns if clicked outside
+            $(document).on("click", function () {
+                $(".select-items").removeClass("select-show");
+                $(".select-selected").removeClass("select-arrow-active");
+            });
+        });
+    </script>
+</body>
+</html>

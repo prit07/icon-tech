@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.informations-personnelles-wappper { 
+    width: 100%;
+    border: 2px solid #004D95;
+    border-radius: 5px;
+    padding: 1% 5% 2% 5%;
+    margin: 50px 0 20px 0;
+    font-size: 16px;
+    font-family: lato !important;
+}
+.informations-personnelles-heading { display: flex; justify-content: center; position: relative}
+.informations-personnelles-heading h3 {
+    background-color: white;
+    box-shadow: white 11px 0px 0px, white -13px 0px 0px;
+    position: relative;
+    top: -27px;
+    color: #004D95;
+    padding: 0 30px;
+    text-align: center;
+    width: initial;
+    border: none;
+    font-size: 21px;
+    font-weight: 700;
+}
+/*  */
+.informations-form-group-main { display: flex; flex-direction: column; gap: 10px; }
+.informations-form-group label { font-size: 17px; line-height: normal;  margin: 0; width: 100%; max-width: 100px;}
+.informations-form-group { display: flex; width: 100%; align-items: center; justify-content: space-between;}
+.informations-form-group input { width: 100%; max-width: 785px; color: #525252; border: 1px solid darkgray; border-radius: 1px; height: 42px;}
+.informations-form-group select { width: 100%; max-width: 785px; color: #525252; border-radius: 7px; padding: 0 10px;}
+.informations-form-group-bottom { display: flex; justify-content: center; margin-top: 20px;}
+.informations-form-group-bottom  label { font-weight: bold;}
+.informations-form-group-bottom  label a {     color: #E5285F;}
+
+
+@media ( max-width:767px) {
+    .informations-form-group label { max-width: 86px;}
+}
+
+@media (min-width: 1200px) {
+    .container , .w-1170{
+        max-width: 1140px;
+    }
+}

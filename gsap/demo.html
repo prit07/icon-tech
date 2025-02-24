@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="quote">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit nemo perspiciatis animi ipsa delectus
+        molestias voluptates reiciendis, itaque non beatae earum ex perferendis assumenda ratione, recusandae incidunt,
+        deserunt enim!
+    </div>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
+    <script>
+        var split = new SplitText("#quote", { type: "chars" });
+        //now animate each character into place from 100px above, fading in:
+        gsap.from(split.chars, {
+            duration: 1,
+            y: 100,
+            autoAlpha: 0,
+            stagger: 0.05
+        });
+
+    </script>
+</body>
+
+</html>

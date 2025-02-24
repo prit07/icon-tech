@@ -1,0 +1,676 @@
+body {
+	margin: 0;
+	background: var(--main_bg);
+	padding: 0;
+}
+:root {
+	--Blacker_Text:'Plus Jakarta Sans', sans-serif; 
+	--Manrope:'Plus Jakarta Sans', sans-serif;
+
+	--main_bg:#DCE4ED;
+	--main_bg_1:#D4AF37;
+	--main_bg_2:#FFF;
+	--main_bg_3:#2B4C65;
+	--main_bg_4:#375B77;
+	--main_bg_5:#1B3344;
+	--main_bg_6:#FBFBFB;
+	--main_bg_7: #CDD6E0;
+
+	--main_title_1:#3E6E7F;
+	--main_title_2:#2B4C65;
+	--main_title_3:#fff;
+	--main_text_1:#555966;
+	--main_text_2:#FFF;
+	--main_text_3:#AEB6BF;
+	--main_text_4:#A1B6C6;
+	--main_text_5:#DCF0FF;
+	--main_text_6:#D4AF37;
+
+	--btn_color_1:#D4AF37;
+	--border_color:#D4AF37;
+	--border_color_1:#2B4C65;
+	--border_color_2:#DCE4ED;
+	--border_color_3:#555966;
+	--border_color_4:#fff;
+	--border_color_5:#396383;
+}
+
+/* banner section css start */
+.banner-section-wapper {
+	position: relative;
+	padding: 64px 0 30px;
+}
+.banner-title {
+	max-width: 730px;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 40px;
+}
+.banner-title h1 {
+	margin: 0;
+	color: var(--main_title_1);
+	text-align: center;
+	font-family: var(--Blacker_Text);
+	font-size: 65px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 70px;
+	letter-spacing: -1.95px;
+	text-transform: capitalize;
+	position: relative;
+	padding-bottom: 32px;
+}
+.banner-title h1 span {
+	color: var(--main_title_2);
+}
+.banner-main-wapper .banner-title p {
+	color: var(--main_title_2);
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0;
+}
+.form-wapper { max-width: 802px; width: 100%; margin: auto; }
+.form-wapper form {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+.banner-new-input { width: 100%; max-width: 349px; margin-right: 0; position: relative; margin-bottom: 0; }
+.area-icon img {
+	position: absolute;
+	top: 14px;
+	left: 16px;
+	width: 20px;
+	height: 20px;
+	z-index: 100;
+}
+.arrow-f-icon img {
+	width: 14px;
+	height: 14px;
+	top: 17px;
+	right: 16px;
+	position: absolute;
+	z-index: 100;
+}
+.form-col { max-width: 330px; width: 100%; }
+.input-focus {
+	max-width: 100%;
+	padding: 0 44px 0 44px;
+	line-height: 48px !important;
+	border-radius: 8px;
+	background: var(--main_bg_2);
+	border: 0;
+	margin: auto;
+	width: 100% !important;
+	height: 48px;
+	position: relative;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.label-focus {
+	position: absolute;
+	left: 44px;
+	top: 14px;
+	color: var(--main_text_3);
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 0;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 100ms;
+	transform-origin: center;
+	font-weight: 400;
+	opacity: 0.6;
+	pointer-events: none;
+}
+input.input-focus:focus { outline: unset; }
+input.input-focus:focus,
+input.input-focus:not(:placeholder-shown) {
+	padding-bottom: 0 !important;
+	padding-top: 10px !important;
+}
+input.input-focus:focus+label,
+input.input-focus:not(:placeholder-shown)+label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+select.select-focus::not([value=""]):valid~label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+select.select-focus:focus+label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+input.input-focus::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+input.input-focus::-moz-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+input.input-focus:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+input.input-focus::placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+.form-col .form-group{ position: relative; margin: 0;}
+.form-col .form-control {
+	max-width: 100%;
+	line-height: 48px !important;
+	padding: 0 44px 0px 44px;
+	border-radius: 8px;
+	background: var(--main_bg_2);
+	border: 0;
+	margin: auto;
+	width: 100% !important;
+	height: 48px;
+	position: relative;
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	appearance: none;
+	line-height: normal;
+	display: block;
+	-webkit-transition: border-color .15s ease-in-out,box-shadow .35s ease-in-out;
+	transition: border-color .15s ease-in-out,box-shadow .35s ease-in-out;
+}
+select.form-control{ transition: 0.15s;  }
+.floating-label {
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--main_text_3);
+	opacity: 1;
+	top: 0px;
+	left: 44px ;
+	pointer-events: none;
+	position: absolute;
+	transition: 240ms;
+	margin-bottom: 0;
+	z-index: 1;
+}
+.floating-diff .floating-label{ opacity: 0; }
+.floating-diff.focused .floating-label{ opacity: 1;}
+.form-group.focused .floating-label { opacity: 1; color: var(--main_text_4); top: 0px; left: 44px; font-size: 12px;}
+.form-group.focused select.form-control{ padding-top: 5px;}
+.form-btn button {
+	border-radius: 8px;
+	background: var(--main_bg_3);
+	border: 0;
+	padding: 0 24px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: var(--main_text_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	height: 48px
+}
+/* banner section css end */
+
+/* cities list css start */
+.sp-cities-wapper { padding:0 0 32px 0; }
+.sp-cities-list-wapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+	border-radius: 8px;
+	background: var(--main_bg_2);
+	padding: 24px;
+	flex-wrap: wrap;
+}
+.sp-cities-list-wapper ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.sp-cities-list-wapper ul li { list-style-type: none; }
+.sp-cities-list-wapper ul li a {
+	color: var(--main_title_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+/* cities list css end */
+
+
+/*Patience areas section css start */
+.patience-areas-wapper {
+	background: var(--main_bg);
+	padding: 200px 0 110px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.patience-areas-wapper:before {
+	content: '';
+	background: var(--main_bg_1);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 120px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.patience-areas-wapper::after {
+	content: '';
+	position: absolute;
+	right: -106px;
+	top: 138px;
+	background: var(--main_bg_2);
+	width: 114%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.patience-areas-title { padding-top: 120px; padding-bottom: 40px;}
+.patience-areas-title h2 { 
+	color: var(--main_title_2);
+	font-family:var(--Manrope);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -0.48px;
+}
+.patience-areas-m-card { display: flex; flex-direction: column; gap: 16px; }
+.patience-areas-main { display: flex; align-items: center; justify-content: space-between; cursor:pointer; }
+.patience-areas-main h4 {
+	margin: 0;
+	color: var(--main_title_1);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	max-width: 85%;
+	width: 100%;
+}
+.patience-areas-main span img { width: 20px; height: 20px; max-width:unset; }
+.patience-areas-list { display:none; padding-top:8px; }
+.patience-areas-list ul { padding:0; margin:0; display:flex; flex-direction:column; gap:8px }
+.patience-areas-list ul li { list-style-type:none; }
+.patience-areas-list ul li a {
+	color: var(--main_text_1);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	position: relative;
+	padding-left: 26px;
+}
+.patience-areas-list ul li a:before{
+	content:'';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	border-radius: 100%;
+	background-color: var(--main_text_1);
+}
+.patience-areas-card.active .patience-areas-list{ display:block; }
+.patience-areas-card.active .patience-areas-main span img { transform:rotate(180deg); }
+/*Patience areas section css end */
+
+/* state page css start */
+.personal-lawyer-wapper {
+	background: var(--main_bg_2);
+	padding: 150px 0 110px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.personal-lawyer-wapper:before {
+	content: '';
+	background: var(--main_bg_1);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 120px;
+	position: absolute;
+	left: -280px;
+	z-index: -2;
+	height: 100%;
+}
+.personal-lawyer-wapper::after {
+	content: '';
+	position: absolute;
+	right: -242px;
+	top: 178px;
+	background: var(--main_bg_3);
+	width: 144%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.pl-top-shape {
+	position: relative;
+	z-index: 0;
+	padding: 100px 0 20px;
+	width: 100%;
+	z-index: 100;
+}
+.state-page-wapper { max-width:900px; width:100%; }
+.state-of-oregon-left-wapper {
+	display: flex;
+	flex-direction: column;
+	gap:22px;
+}
+.state-of-oregon-left-wapper p {
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+}
+.state-of-oregon-left-wapper h6 {
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 0;
+}
+.state-of-oregon-left-wapper ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.state-of-oregon-left-wapper ul li {
+	list-style: none;
+}
+.state-of-oregon-top {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.state-of-oregon-top h2 {
+	color: var(--main_title_3);
+	font-family: var(--Blacker_Text);
+	font-size: 34px;
+	font-style: normal;
+	font-weight:700;
+	line-height: normal;
+	letter-spacing: -0.34px;
+	padding-bottom: 8px;
+	margin: 0;
+}
+.state-of-oregon-top h5 {
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+}
+.state-of-oregon-top p {
+	font-size: 14px;
+	line-height: 20px;
+	opacity: 0.5;
+}
+.state-page-notes{
+	padding: 16px;
+	position: relative;
+	border-radius: 8px;
+	border: 1px solid var(--border_color_5);
+	margin-top: 32px;
+}
+.state-page-notes h4 {
+	color: #FFF;
+	font-family: var(--main_title_3);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	margin: 0;
+	padding-bottom: 14px;
+}
+.state-page-notes ul { margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+.state-page-notes ul li {
+	list-style-type: none;
+	color: #FFF;
+	font-family: var(--main_title_3);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+}
+/* faq section html start */
+.learn-about-wapper { padding-top:64px; }
+.review-faq-wapper h2 {
+	margin: 0;
+	color: var(--main_title_3);
+	font-family: var(--Blacker_Text);
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -0.32px;
+	padding-bottom: 32px;
+}
+.review-faq-wapper {
+	padding: 40px 0 0;	
+	position: relative;
+}
+.review-faq-wapper { max-width:900px; width:100%; }
+.faq-accordion-item {
+	margin-bottom: 10px;
+}
+.faq-accordion-wapper a {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	color: var(--main_title_3);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	letter-spacing: -0.54px;
+}
+.faq-accordion-wapper a { width: 95% !important; }
+.faq-accordion-wapper .faq-content {
+	display: none; 
+	overflow: hidden; 
+	padding: 0 24px 24px;
+}
+.faq-accordion-wapper .faq-content p { 
+	color: var(--main_text_2);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 24px;
+	letter-spacing: -0.48px;
+}
+.faq-accordion-wapper .faq-content p:last-child { margin-bottom:0; }
+.faq-accordion-item .faq-menu:after {
+	font-family: 'Font Awesome\ 5 Free';
+	content: '\f067';
+	position: absolute;
+	right: 23px;
+	top: 24px;
+	font-size: 18px;
+	color:var(--main_title_3);
+	text-align: center;
+	font-weight: 900;
+}
+.faq-accordion-item.active .faq-menu::after {
+	top: 25px; 
+	content: '\f068';
+	color: var(--main_title_3); 
+}
+.faq-accordion-item { 
+	margin-bottom: 0; 
+	border-top: 1px solid rgba(255, 255, 255, 0.20);
+}
+.faq-accordion-item:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.20); }
+.faq-accordion-item .faq-menu {
+	border-radius: 4px;
+	padding:24px;
+	position: relative;
+}
+.faq-accordion-item.active .faq-menu { 
+	color: var(--main_title_3); 
+}
+.faq-accordion-item.active .faq-menu a { 
+	color:var(--main_title_3); 
+}
+/* faq section html end */
+
+/* state page css end */
+
+@media (max-width:1400px) {
+	/* Patience areas section css start */
+	.patience-areas-wapper::after { right: -121px; width: 120%; }
+	/* Patience areas section css End */
+
+	/* state page css start */
+	.personal-lawyer-wapper::after { width: 140%; }
+	/* state page css End */ 
+}
+
+@media(max-width:1199px) {
+	/* Patience areas section css start */
+	.patience-areas-wapper::after { content: ''; width: 123%; right: -120px; }
+	/* Patience areas section css End */
+
+	/* state page css start */
+	.personal-lawyer-wapper::after { width: 152%; }
+	.personal-lawyer-map svg { max-width:100%;  }
+	/* state page css End */
+
+}
+
+@media(max-width:991px) {
+	/* banner section css start */
+	.form-col { max-width: 275px; width: 100%;} 
+	/* banner section css End */
+
+	/* Patience areas section css  */
+	.patience-areas-wapper:before { top: 78px; left: -114px; }
+	.patience-areas-wapper::after { width: 200%; right: -170px; z-index: -1; }
+	.patience-areas-title { padding:80px 0 0; }
+	.patience-areas-wapper { padding: 200px 0 40px; }
+	/* Patience areas section css End */
+
+	/* state page css start */
+	.personal-lawyer-wapper::after { width:185%; right: -262px; }
+	.pl-top-shape { padding: 60px 0  0 0; }
+	/* state page css End */
+
+	/* cities list css start  */
+	.sp-cities-list-wapper { gap: 30px; }
+	.sp-cities-list-wapper ul { display: flex; flex-direction: column; gap: 8px; }
+	.sp-cities-list-wapper ul li { width: 114px; list-style-type: none; }
+	/* cities list css end  */
+}
+
+@media(max-width:767px) {
+
+	/* Patience areas section css start */
+	.patience-areas-wapper { padding:100px 0 60px; }
+	.patience-areas-wapper::after { width: 248%; right: -254px; z-index: -1; }
+	.patience-areas-wapper:before { top: 108px; left: -193px; }
+	.patience-areas-title h2 { font-size: 36px; }
+	/* Patience areas section css end */
+
+	/* banner section css start */
+	.banner-section-wapper { position: relative; padding: 48px 0 24px; }
+	.banner-title { padding-bottom: 24px; }
+	.banner-title h1 { font-size: 48px; line-height: 110%; }
+	.banner-title h1:before { width: 178px; height: 20px; }
+	.form-btn {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		max-width: unset;
+	}
+	.form-btn button {
+		width: 100%;
+		max-width: 100%;
+		height: 48px;
+		padding: 12px 24px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	.banner-new-input { max-width: 100%;}
+	.form-wapper, .form-col { max-width:100%; }
+	/* banner section css End*/
+
+	/* state page css start */
+	.personal-lawyer-wapper { padding:100px 0 60px; }
+	.pl-top-shape { padding: 0 0  0 0; }
+	.personal-lawyer-wapper:before { top: 18px; }
+	.personal-lawyer-wapper::after { right: -400px; top: 126px; width: 603%; }
+
+	/* faq section css start */
+	.learn-about-text h2 {font-size: 36px; }
+	.learn-about-wapper { padding-top:60px; }
+	.faq-accordion-item .faq-menu { padding:16px; }
+	.faq-accordion-wapper a { font-size:16px; line-height:22px; }
+	.learn-about-text p { font-size:16px;line-height:24px; }
+	/* faq section css end */
+
+	/* state page css start */
+
+	/* cities list css start  */
+	.sp-cities-list-wapper {
+		display: flex;
+		padding: 16px;
+		column-gap: 16px;
+		align-items: stretch;
+	}
+	/* cities list css end  */
+
+}
+
+@media(min-width:1800px){
+	.personal-lawyer-wapper::after { right:-292px; }
+}

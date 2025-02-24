@@ -1,0 +1,66 @@
+ body { margin: 0; padding: 0; box-sizing: border-box;}
+
+
+
+.faq_seaction { padding: 100px 0;}
+ .faq_heading { width: 100%; padding-bottom: 40px;}
+ .faq_heading h2{ 
+   color: #054ADA;
+   font-family: Sora;
+   font-size: 30px;
+   font-weight: 600;
+   text-align: center;
+   line-height: 37.8px;
+   margin: 0;
+ }
+ .faq_accordion_item {
+    border-radius: 8px;
+    border: 3px solid #F0F0F5;
+    background: #FFF;
+    padding: 0 32px;
+    margin-bottom: 15px;
+}
+.faq_accordion_item .faq_menu:after {
+    font-family: 'Font Awesome\ 5 Free';
+    content: '\f078';
+    position: absolute;
+    right: 18px;
+    top: 22px;
+    font-size: 18px;
+    color: #2C2112;
+    text-align: center;
+    font-weight: 900;
+}
+ .faq_accordion_item.active .faq_menu::after { top: 22px; content: '\f077'; color: #2C2112;}
+.faq_accordion_item .faq_menu { background-color: #fff; padding: 20px 0px; position: relative;}
+.faq_accordion_wapper a { width: 90%; display: inline-block;}
+.faq_accordion_wapper a {
+    position: relative;
+    width: 100%;
+    color: #2C2112 !important;
+    font-family: Sora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+}
+.faq_accordion_wapper .faq_content { display: none; padding: 4px 0px 0px 0;}
+.faq_content p {
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    text-align: left;
+}
+
+
+
+@media(max-width:600px){
+    .faq_accordion_item {  padding: 0 35px 0 15px;}
+    .faq_accordion_wapper a { width: 85%; display: inline-block;}
+}
+
+@media(min-width:1340px){
+	.container.w-1240 { max-width:1100px; }
+}
